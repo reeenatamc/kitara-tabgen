@@ -50,6 +50,25 @@ def nearest_slot(grid, time):
     return best
 
 
+def subdivide(gap, period):
+    """Cuántas semicorcheas caben en el hueco entre dos golpes detectados.
+
+    El detector de pulso no marca todos los golpes: se salta los que no reconoce y deja
+    huecos que valen más de un pulso. Repartir siempre cuatro semicorcheas da por bueno que
+    cada hueco es un pulso, y cuando no lo es la rejilla pierde o gana tiempo justo ahí.
+
+    Eso desplazaba tres compases de «Solamente uno»: un hueco de pulso y cuarto se llevaba
+    cuatro semicorcheas en vez de cinco, y de ahí en adelante la melodía caía tarde. Las
+    notas eran las correctas y el compás salía descuadrado igual.
+
+    Nunca devuelve cero: dos golpes casi pegados tienen que repartir al menos una, o se
+    pierden las notas que caen en ese hueco.
+    """
+    if period <= 0:
+        return 4
+    return max(1, round(gap / period * 4))
+
+
 def quantize(notes, grid, inner_voices=1):
     """Qué suena en cada semicorchea: `posición -> {altura: amplitud}`.
 
