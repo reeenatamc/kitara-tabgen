@@ -29,15 +29,23 @@ class Limpiar(unittest.TestCase):
 
         self.assertEqual([n[2] for n in clean(notas)], [60])
 
-    def test_tira_la_cuerda_que_seguia_sonando(self):
-        # El modelo vuelve a detectar una altura que todavía vibra, y parece otro ataque.
-        notas = [nota(0.0, 60, amp=0.9, fin=1.0), nota(1.02, 60, amp=0.5)]
+    def test_tira_el_ataque_doble_que_inventa_el_detector(self):
+        # Dos ataques de la misma altura a 20 ms: en una cuerda eso no se toca.
+        notas = [nota(0.0, 60, amp=0.9), nota(0.02, 60, amp=0.5)]
 
-        self.assertEqual(len(clean(notas)), 1, "la segunda es la misma cuerda sonando")
+        self.assertEqual(len(clean(notas)), 1)
+
+    def test_una_nota_repetida_sobre_la_que_sigue_sonando_se_conserva(self):
+        # El fallo más caro que tuvo el transcriptor. Una nota de guitarra suena hasta que
+        # entra la siguiente, así que el detector la da por larga. Si el filtro mira el
+        # final de la anterior en vez de su principio, un pedal repetido cada pulso se tira
+        # entero: eran 232 ataques buenos de 793.
+        notas = [nota(0.0, 76, amp=0.64, fin=0.534), nota(0.534, 76, amp=0.69)]
+
+        self.assertEqual(len(clean(notas)), 2, "medio segundo después es otra nota")
 
     def test_conserva_el_reataque_si_suena_mas_fuerte(self):
-        # Volver a pulsar la misma cuerda más fuerte sí es un ataque nuevo.
-        notas = [nota(0.0, 60, amp=0.5, fin=1.0), nota(1.02, 60, amp=0.9)]
+        notas = [nota(0.0, 60, amp=0.5, fin=1.0), nota(0.02, 60, amp=0.9)]
 
         self.assertEqual(len(clean(notas)), 2)
 
