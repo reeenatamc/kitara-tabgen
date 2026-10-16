@@ -123,7 +123,8 @@ def place(slots):
         chosen.append((layers[depth][1][node], paths[depth][node][2]))
         node = paths[depth][node][1]
     chosen.reverse()
-    return dict(zip(keys, chosen))
+    # strict=True: hay exactamente una postura por posición, y si no, es un error.
+    return dict(zip(keys, chosen, strict=True))
 
 
 def notation(combo, position, accented_string):

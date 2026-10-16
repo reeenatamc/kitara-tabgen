@@ -6,6 +6,7 @@ esos datos y vive en los otros módulos, que se pueden probar sin cargar nada.
 """
 
 import warnings
+from itertools import pairwise
 
 warnings.filterwarnings("ignore")
 
@@ -55,7 +56,5 @@ def beat_grid(wav):
         ]
     )
 
-    grid = np.concatenate(
-        [np.linspace(a, b, 4, endpoint=False) for a, b in zip(beats[:-1], beats[1:])]
-    )
+    grid = np.concatenate([np.linspace(a, b, 4, endpoint=False) for a, b in pairwise(beats)])
     return grid, 60.0 / period if period else tempo

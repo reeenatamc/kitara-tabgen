@@ -94,10 +94,10 @@ def bar_phase(slots):
     }
     return max(
         range(0, BAR_SLOTS, 4),
-        key=lambda offset: sum(
-            w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS in (0, 8)
-        )
-        + sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS == 0),
+        key=lambda offset: (
+            sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS in (0, 8))
+            + sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS == 0)
+        ),
     )
 
 
