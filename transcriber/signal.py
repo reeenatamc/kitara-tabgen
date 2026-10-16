@@ -6,7 +6,6 @@ esos datos y vive en los otros módulos, que se pueden probar sin cargar nada.
 """
 
 import warnings
-from itertools import pairwise
 
 warnings.filterwarnings("ignore")
 
@@ -39,29 +38,28 @@ def detect_notes(wav):
 def beat_grid(wav):
     """Los instantes de cada semicorchea, y el tempo que sale de ellos.
 
-    librosa sólo marca los golpes donde los reconoce, así que la rejilla se extiende hacia
-    atrás y hacia delante con el mismo periodo: si la grabación empieza con una nota antes
-    del primer golpe detectado, sin eso se quedaría fuera del primer compás.
+    Los golpes que da el detector tiemblan, y la rejilla no se interpola entre ellos: se
+    ajusta un pulso constante a todos a la vez con `music.steady_grid`, que es lo que quita
+    ese temblor.
+
+    Después se extiende hacia los dos extremos con ese mismo pulso, porque el detector no
+    llega al principio ni al final de la grabación y sin eso las primeras notas se quedarían
+    fuera del primer compás.
     """
     y, sr = librosa.load(wav, sr=22050)
     tempo, beats = librosa.beat.beat_track(y=y, sr=sr, start_bpm=100, units="time")
     tempo = float(np.atleast_1d(tempo)[0])
-    period = float(np.median(np.diff(beats)))
 
-    before = int(np.ceil(beats[0] / period)) + 1
-    after = int(np.ceil((len(y) / sr - beats[-1]) / period)) + 1
-    beats = np.concatenate(
-        [
-            beats[0] - period * np.arange(before, 0, -1),
-            beats,
-            beats[-1] + period * np.arange(1, after + 1),
-        ]
-    )
+    grid, step = music.steady_grid([float(b) for b in beats])
+    if not grid or step <= 0:
+        return np.asarray(grid), tempo
 
-    grid = np.concatenate(
-        [
-            np.linspace(a, b, music.subdivide(b - a, period), endpoint=False)
-            for a, b in pairwise(beats)
-        ]
-    )
-    return grid, 60.0 / period if period else tempo
+    sixteenth = step / 4
+    duration = len(y) / sr
+    before = [grid[0] - sixteenth * i for i in range(int(np.ceil(grid[0] / sixteenth)), 0, -1)]
+    after = [
+        grid[-1] + sixteenth * i
+        for i in range(1, int(np.ceil((duration - grid[-1]) / sixteenth)) + 1)
+    ]
+
+    return np.asarray(before + grid + after), 60.0 / step
