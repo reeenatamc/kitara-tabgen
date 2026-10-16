@@ -6,6 +6,7 @@ Capo on fret 2, 42 bars, same sections.
 """
 import copy
 import json
+import os
 import sys
 import uuid
 
@@ -13,7 +14,8 @@ from tabgen import write_guide
 
 REPO = "/Users/renata/Documents/GitHub/fretwork"
 # The arrangement this one starts from was removed from the app on 2026-10-13; its files live here.
-ARCHIVE = "/Users/renata/Documents/fretwork-generador/archivo"
+# Relativo al script: la carpeta se renombró una vez y la ruta absoluta quedó muerta.
+ARCHIVE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "archive")
 OURS, SOURCE = "hasta-siempre-fiel", "hasta-siempre"
 
 # our bar (from 1) -> source bar (from 1)

@@ -1,0 +1,9 @@
+Copyright (c) 2026 Renata Maldonado. Todos los derechos reservados.
+Copyright (c) 2026 Renata Maldonado. All rights reserved.
+
+Estas herramientas producen las tablaturas de kitara y comparten su criterio.
+No se concede ninguna licencia de uso, copia, modificación, distribución ni
+venta, ni total ni parcial, salvo permiso escrito de la autora.
+
+Las dependencias conservan sus propias licencias. El modelo Basic Pitch es de
+Spotify y es Apache-2.0; librosa es ISC; numpy es BSD-3-Clause.
