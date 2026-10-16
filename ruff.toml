@@ -1,0 +1,46 @@
+# Ruff hace de linter y de formateador. Un solo binario, sin plugins que cuadrar.
+target-version = "py311"
+line-length = 100
+
+[lint]
+select = [
+    "E",    # errores de pycodestyle
+    "F",    # pyflakes: nombres sin definir, imports sin usar
+    "I",    # orden de los imports
+    "UP",   # sintaxis que ya tiene forma moderna
+    "B",    # bugbear: trampas conocidas
+    "SIM",  # condiciones y bucles que se escriben más corto
+    "RUF",  # reglas propias de ruff
+]
+
+# Los hallazgos que necesitan criterio están en el issue #2 y se quitan de aquí al
+# arreglarlos. Lo que no se puede arreglar sin pensar no bloquea el CI, pero tampoco
+# desaparece.
+ignore = [
+    "UP031",   # formato con % en vez de f-strings: toca la notación de tabgen
+    "RUF046",  # int() sobre algo que ya es entero: ver si truncaba a propósito
+    "RUF012",  # atributo de clase mutable sin ClassVar
+]
+
+[lint.per-file-ignores]
+# Las pruebas comparan con valores a mano y eso es lo que las hace legibles.
+"tests/*" = ["E501"]
+
+# Los archivos de canción son datos, no programas: una línea por compás, con su notación
+# entera. Partirlas por el ancho las haría ilegibles y es justo lo que hay que poder leer
+# de un golpe para comparar con la tablatura.
+"salvatore.py" = ["E501"]
+"solamente-uno.py" = ["E501"]
+"solamente-uno-facil.py" = ["E501"]
+"solamente-uno-melodica.py" = ["E501"]
+"solamente_uno_base.py" = ["E501"]
+"hasta-siempre-fiel.py" = ["E501"]
+"hasta-siempre-lo-mejor.py" = ["E501"]
+"hasta-siempre-sin-cejilla.py" = ["E501"]
+
+# `warnings.filterwarnings` tiene que ir antes de importar librosa y basic-pitch, o los
+# avisos de TensorFlow salen igual. El orden es el que hace falta, no un descuido.
+"transcriber/signal.py" = ["E402"]
+
+[format]
+quote-style = "double"

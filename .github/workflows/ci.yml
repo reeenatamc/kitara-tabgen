@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: lint
+        run: uvx ruff check .
+
+      - name: formato
+        run: uvx ruff format --check .
+
+      # Las pruebas no cargan ningún modelo ni abren ningún audio a propósito: cubren las
+      # decisiones musicales, que es lo que se equivoca. Así corren en segundos y sin
+      # instalar basic-pitch, que son cientos de megas.
+      - name: pruebas
+        run: python -m unittest discover -s tests -t .
+
+# El validador (`check/`) no entra en CI: depende de kitara-core por ruta absoluta y kitara
+# es privado, así que haría falta un token entre repos. Se corre en local, y lo que
+# comprueba —que los compases cuadren— ya lo cubren las pruebas de kitara.
