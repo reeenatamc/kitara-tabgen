@@ -19,29 +19,18 @@ BAR_SLOTS = 16
 
 
 def clean(notes, min_amplitude=0.35, retrigger=0.06, margin=1.1):
-    """Quita las notas flojas y los ataques dobles que inventa el detector.
+    """Quita las notas flojas y las que son una cuerda que todavía sonaba.
 
-    El detector reparte una misma nota en dos ataques pegados, y eso hay que juntarlo. Lo
-    que decide si un ataque es falso es **cuándo empezó el anterior**, no cuándo acabó: una
-    nota de guitarra suena hasta que entra la siguiente, así que medir desde el final
-    convierte en eco cualquier nota repetida.
-
-    Era el fallo más caro del transcriptor. Un pedal de Mi5 repetido cada medio segundo
-    —un pulso entero a 112— se tiraba entero porque cada ataque caía dentro de lo que
-    duraba el anterior. Tiraba 232 ataques buenos de 793, y con ellos la melodía de los
-    compases donde la pieza repite una nota aguda mientras la voz de abajo baja.
-
-    Dos ataques de la misma altura a menos de 60 ms no se pueden tocar en la misma cuerda:
-    eso sí es el detector repartiendo una nota en dos.
-
-    Cuando se descarta un ataque se alarga la nota anterior: dejó de ser un ataque nuevo, no
-    dejó de sonar.
+    basic-pitch vuelve a detectar una altura que sigue vibrando, y eso aparece como si se
+    hubiera tocado otra vez. Se descarta cuando llega muy pegada a la anterior y no suena
+    más fuerte, pero se alarga la nota original: dejó de ser un ataque nuevo, no dejó de
+    sonar.
     """
     kept, last = [], {}
     for start, end, pitch, amp in notes:
         previous = last.get(pitch)
         weak = amp < min_amplitude
-        echo = previous and start - previous[0] < retrigger and amp <= previous[2] * margin
+        echo = previous and start < previous[1] + retrigger and amp <= previous[2] * margin
         if weak or echo:
             if previous:
                 last[pitch] = (previous[0], max(previous[1], end), previous[2])
