@@ -14,6 +14,8 @@ import librosa
 import numpy as np
 from basic_pitch.inference import predict
 
+from . import music
+
 
 def detect_notes(wav):
     """Notas del audio, ordenadas por cuándo empiezan.
@@ -56,5 +58,10 @@ def beat_grid(wav):
         ]
     )
 
-    grid = np.concatenate([np.linspace(a, b, 4, endpoint=False) for a, b in pairwise(beats)])
+    grid = np.concatenate(
+        [
+            np.linspace(a, b, music.subdivide(b - a, period), endpoint=False)
+            for a, b in pairwise(beats)
+        ]
+    )
     return grid, 60.0 / period if period else tempo

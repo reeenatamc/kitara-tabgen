@@ -50,6 +50,57 @@ def nearest_slot(grid, time):
     return best
 
 
+def subdivide(gap, period):
+    """Cuántas semicorcheas caben en el hueco entre dos golpes detectados.
+
+    El detector de pulso se salta los golpes que no reconoce y deja huecos que valen dos
+    pulsos o más. Repartir siempre cuatro semicorcheas da por bueno que cada hueco es un
+    pulso, y donde no lo es la rejilla pierde tiempo y desplaza todo lo que viene después.
+
+    La corrección va en pulsos enteros, no en semicorcheas: el detector encuentra un golpe o
+    no lo encuentra, nunca se deja medio. Redondear a semicorcheas parecía más fino y era
+    peor, porque entonces el vaivén normal del tempo —un hueco de pulso y cuarto en una
+    grabación de guitarra sola— se convierte en una semicorchea de más que corre el resto de
+    la pieza. Medido en «Solamente uno»: así bajaba del 52 % al 44 %.
+
+    Nunca devuelve menos de cuatro: un hueco más corto que un pulso es el mismo pulso
+    medido con prisa, no menos música.
+    """
+    if period <= 0:
+        return 4
+    return 4 * max(1, round(gap / period))
+
+
+def grid_step(grid):
+    """Cuánto dura una semicorchea en la rejilla."""
+    if len(grid) < 2:
+        return 0.0
+    gaps = sorted(grid[i + 1] - grid[i] for i in range(len(grid) - 1))
+    return gaps[len(gaps) // 2]
+
+
+def timing_bias(notes, grid):
+    """El desfase sistemático entre los ataques detectados y la rejilla, en semicorcheas.
+
+    Los dos relojes no coinciden: el detector de notas marca el ataque un poco antes de
+    donde el detector de pulso pone el golpe. En «Solamente uno» son -0,25 semicorcheas, 34
+    ms, y es constante de principio a fin.
+
+    Un cuarto de semicorchea no mueve ninguna nota por sí solo, porque el redondeo aguanta
+    hasta la mitad. Lo que hace es dejar la pieza entera montada cerca del borde: con ese
+    margen comido, la holgura normal de tocar basta para que una nota salte a la semicorchea
+    siguiente, y eso sí desplaza compases enteros.
+
+    Se mide con la mediana y no con el promedio: unas pocas notas muy desplazadas, que es lo
+    que pasa donde el modelo se equivoca, no deben mover la corrección.
+    """
+    step = grid_step(grid)
+    if not notes or step <= 0:
+        return 0.0
+    offsets = sorted((start - grid[nearest_slot(grid, start)]) / step for start, *_ in notes)
+    return offsets[len(offsets) // 2]
+
+
 def quantize(notes, grid, inner_voices=1):
     """Qué suena en cada semicorchea: `posición -> {altura: amplitud}`.
 
@@ -61,8 +112,9 @@ def quantize(notes, grid, inner_voices=1):
     fuerte casi siempre es el armónico de esa, no una nota pisada.
     """
     by_slot = {}
+    shift = timing_bias(notes, grid) * grid_step(grid)
     for start, _, pitch, amp in notes:
-        slot = nearest_slot(grid, start)
+        slot = nearest_slot(grid, start - shift)
         current = by_slot.setdefault(slot, {})
         current[pitch] = max(current.get(pitch, 0), amp)
 
