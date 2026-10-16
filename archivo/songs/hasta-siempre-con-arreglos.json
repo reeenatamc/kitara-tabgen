@@ -1,0 +1,4403 @@
+{
+  "schema_version": 1,
+  "id": "d3caf5c3-c13c-4739-bd9c-2a0cfb43a1d7",
+  "meta": {
+    "title": "Hasta siempre con arreglos",
+    "artist": "Carlos Puebla",
+    "tab_author": "gabrielechitarra",
+    "source_url": "https://www.tiktok.com/@gabrielechitarra/video/7323951854444989728",
+    "tempo_bpm": 100.0,
+    "tags": [
+      "dedos",
+      "cejilla 2"
+    ]
+  },
+  "master_bars": [
+    {
+      "index": 0,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "section": {
+        "text": "Intro",
+        "marker": null
+      }
+    },
+    {
+      "index": 1,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 2,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 3,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 4,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "section": {
+        "text": "Estrofa",
+        "marker": null
+      }
+    },
+    {
+      "index": 5,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 6,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 7,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 8,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 9,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 10,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 11,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 12,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "section": {
+        "text": "Coro",
+        "marker": null
+      }
+    },
+    {
+      "index": 13,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 14,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 15,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 16,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 17,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 18,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 19,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 20,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "section": {
+        "text": "Final",
+        "marker": null
+      }
+    },
+    {
+      "index": 21,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 22,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      }
+    },
+    {
+      "index": 23,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "tempo": {
+        "bpm": 84.0,
+        "label": "rit."
+      }
+    },
+    {
+      "index": 24,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "tempo": {
+        "bpm": 72.0,
+        "label": "rit."
+      }
+    },
+    {
+      "index": 25,
+      "time_signature": {
+        "numerator": 4,
+        "denominator": 4
+      },
+      "key_signature": {
+        "fifths": 0,
+        "mode": "Major"
+      },
+      "tempo": {
+        "bpm": 60.0,
+        "label": "rit."
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Guitarra",
+      "short_name": "Gtr",
+      "midi_program": 25,
+      "midi_channel": 0,
+      "tuning": {
+        "midi_notes": [
+          64,
+          59,
+          55,
+          50,
+          45,
+          40
+        ],
+        "label": "Estándar"
+      },
+      "capo": 2,
+      "fret_count": 22,
+      "staves": [
+        {
+          "show_standard": false,
+          "show_tabs": true,
+          "bars": [
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 3,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 1,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 2,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null
+                    },
+                    {
+                      "id": 5,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 4,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 7,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 6,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 9,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 8,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 11,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 10,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 13,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 12,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 15,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 14,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 17,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 16,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 20,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 18,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 19,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 22,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 21,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 24,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 23,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 26,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 25,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 29,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 27,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 28,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null
+                    },
+                    {
+                      "id": 31,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 30,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 33,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 32,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 35,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 34,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 38,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 36,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 37,
+                          "string": 4,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 40,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 39,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 42,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 41,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 44,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 43,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 46,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 45,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 48,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 47,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 50,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 49,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 52,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 51,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 55,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 53,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 54,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 57,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 56,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 59,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 58,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 61,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 60,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 64,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 62,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 63,
+                          "string": 4,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 66,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 65,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 68,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 67,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 70,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 69,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 73,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 71,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 72,
+                          "string": 5,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 75,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 74,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 78,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 76,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 77,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 80,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 79,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 83,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 81,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 82,
+                          "string": 5,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 85,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 84,
+                          "string": 2,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 88,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 86,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 87,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 90,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 89,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 93,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 91,
+                          "string": 2,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 92,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 95,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 94,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 97,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 96,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 99,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 98,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 102,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 100,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 101,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null
+                    },
+                    {
+                      "id": 104,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 103,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 106,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 105,
+                          "string": 5,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 108,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 107,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 111,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 109,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 110,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 113,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 112,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 115,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 114,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 117,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 116,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 120,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 118,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 119,
+                          "string": 5,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 122,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 121,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 124,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 123,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 126,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 125,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 128,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 127,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 131,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 129,
+                          "string": 2,
+                          "fret": 0,
+                          "tie_destination": true,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 130,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 133,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 132,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 136,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 134,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 135,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 138,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 137,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 141,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 139,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 140,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 143,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 142,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 146,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 144,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 145,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 148,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 147,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 150,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 149,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 152,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 151,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 154,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 153,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 156,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 155,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 159,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 157,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 158,
+                          "string": 5,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 161,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 160,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 163,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 162,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 165,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 164,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 168,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 166,
+                          "string": 3,
+                          "fret": 2,
+                          "tie_destination": true,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 167,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 170,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 169,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 172,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 171,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 174,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 173,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 177,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 175,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 176,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 179,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 178,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 182,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 180,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 181,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 184,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 183,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 187,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 185,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 186,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 189,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 188,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 191,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 190,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 193,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 192,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 196,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 194,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 195,
+                          "string": 6,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 198,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 197,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 200,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 199,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 202,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 201,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 206,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 203,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 204,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 205,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 208,
+                      "duration": 4,
+                      "notes": [
+                        {
+                          "id": 207,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "VIBRATO | LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 210,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 209,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 212,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 211,
+                          "string": 6,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 214,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 213,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 216,
+                      "duration": 4,
+                      "notes": [
+                        {
+                          "id": 215,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "VIBRATO | LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 218,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 217,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 220,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 219,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 222,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 221,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 224,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 223,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 227,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 225,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 226,
+                          "string": 5,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 229,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 228,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 231,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 230,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 233,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 232,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 236,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 234,
+                          "string": 3,
+                          "fret": 2,
+                          "tie_destination": true,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 235,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 238,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 237,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 240,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 239,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 242,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 241,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 245,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 243,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 244,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 247,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 246,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 250,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 248,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 249,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 252,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 251,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 255,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 253,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 254,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 257,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 256,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 259,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 258,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 261,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 260,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 264,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 262,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 263,
+                          "string": 6,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 266,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 265,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 268,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 267,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 270,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 269,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 272,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 271,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 277,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 273,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 274,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 275,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 276,
+                          "string": 6,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ A I M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 279,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 278,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 281,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 280,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 283,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 282,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 286,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 284,
+                          "string": 2,
+                          "fret": 0,
+                          "tie_destination": true,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 285,
+                          "string": 5,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 288,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 287,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 290,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 289,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 292,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 291,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 294,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 293,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 296,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 295,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 299,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 297,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 298,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 301,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 300,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 304,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 302,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 303,
+                          "string": 6,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 306,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 305,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 308,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 307,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 310,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 309,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 312,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 311,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 317,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 313,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 314,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 315,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 316,
+                          "string": 6,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ A I M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 319,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 318,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 321,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 320,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 323,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 322,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 326,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 324,
+                          "string": 2,
+                          "fret": 0,
+                          "tie_destination": true,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 325,
+                          "string": 5,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 328,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 327,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 330,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 329,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 332,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 331,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 335,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 333,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 334,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 337,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 336,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 339,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 338,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 341,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 340,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 344,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 342,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 343,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 347,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 345,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 346,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 349,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 348,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 351,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 350,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 353,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 352,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 356,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 354,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 355,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 361,
+                      "duration": 4,
+                      "notes": [
+                        {
+                          "id": 357,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 358,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 359,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 360,
+                          "string": 5,
+                          "fret": 5,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M I A Ñ",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 363,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 362,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 365,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 364,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 367,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 366,
+                          "string": 6,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 369,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 368,
+                          "string": 4,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 372,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 370,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 371,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 374,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 373,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 377,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 375,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 376,
+                          "string": 5,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 379,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 378,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 381,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 380,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 383,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 382,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 385,
+                      "duration": 4,
+                      "notes": [
+                        {
+                          "id": 384,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "VIBRATO | LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 387,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 386,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 389,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 388,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 394,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 390,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "ACCENT | LET_RING"
+                        },
+                        {
+                          "id": 391,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 392,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 393,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I A I M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 396,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 395,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 398,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 397,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 400,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 399,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "ACCENT | LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 403,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 401,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 402,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 405,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 404,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 407,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 406,
+                          "string": 5,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "F"
+                    },
+                    {
+                      "id": 409,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 408,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "F"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 412,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 410,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 411,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null
+                    },
+                    {
+                      "id": 414,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 413,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 416,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 415,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 418,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 417,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 420,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 419,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 422,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 421,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 424,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 423,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 426,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 425,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 429,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 427,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 428,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 431,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 430,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 433,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 432,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 435,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 434,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 438,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 436,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 437,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null
+                    },
+                    {
+                      "id": 440,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 439,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 442,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 441,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 444,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 443,
+                          "string": 1,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 447,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 445,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 446,
+                          "string": 4,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 449,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 448,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 451,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 450,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 453,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 452,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 455,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 454,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 457,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 456,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 459,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 458,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 461,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 460,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 464,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 462,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 463,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 466,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 465,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 468,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 467,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 470,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 469,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 473,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 471,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "HAMMER_PULL | LET_RING"
+                        },
+                        {
+                          "id": 472,
+                          "string": 4,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 475,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 474,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    },
+                    {
+                      "id": 477,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 476,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 479,
+                      "duration": 16,
+                      "notes": [
+                        {
+                          "id": 478,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 482,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 480,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 481,
+                          "string": 5,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 484,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 483,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 487,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 485,
+                          "string": 2,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 486,
+                          "string": 4,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 489,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 488,
+                          "string": 2,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 492,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 490,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 491,
+                          "string": 5,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null
+                    },
+                    {
+                      "id": 494,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 493,
+                          "string": 2,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null
+                    },
+                    {
+                      "id": 497,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 495,
+                          "string": 1,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 496,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null
+                    },
+                    {
+                      "id": 499,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 498,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 502,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 500,
+                          "string": 2,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 501,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 504,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 503,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 506,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 505,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "Ñ",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 508,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 507,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 511,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 509,
+                          "string": 3,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 510,
+                          "string": 4,
+                          "fret": 1,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 513,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 512,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 515,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 514,
+                          "string": 6,
+                          "fret": 3,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    },
+                    {
+                      "id": 517,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 516,
+                          "string": 6,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "M",
+                      "provenance": null,
+                      "dynamics": "MP"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 519,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 518,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 521,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 520,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "I",
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 523,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 522,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A",
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 525,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 524,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 527,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 526,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 529,
+                      "duration": 8,
+                      "notes": [
+                        {
+                          "id": 528,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "P"
+                    },
+                    {
+                      "id": 533,
+                      "duration": 4,
+                      "notes": [
+                        {
+                          "id": 530,
+                          "string": 1,
+                          "fret": 12,
+                          "harmonic": "Natural",
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 531,
+                          "string": 2,
+                          "fret": 12,
+                          "harmonic": "Natural",
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 532,
+                          "string": 3,
+                          "fret": 12,
+                          "harmonic": "Natural",
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "provenance": null,
+                      "dynamics": "P"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "voices": [
+                {
+                  "beats": [
+                    {
+                      "id": 540,
+                      "duration": 1,
+                      "notes": [
+                        {
+                          "id": 534,
+                          "string": 1,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 535,
+                          "string": 2,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 536,
+                          "string": 3,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 537,
+                          "string": 4,
+                          "fret": 4,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 538,
+                          "string": 5,
+                          "fret": 2,
+                          "techniques": "LET_RING"
+                        },
+                        {
+                          "id": 539,
+                          "string": 6,
+                          "fret": 0,
+                          "techniques": "LET_RING"
+                        }
+                      ],
+                      "text": "A I",
+                      "provenance": null,
+                      "dynamics": "P",
+                      "effects": {
+                        "arpeggio": [
+                          "Down",
+                          960
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": 0,
+      "kind": "Intro",
+      "label": "Intro",
+      "bar_start": 0,
+      "bar_end": 4
+    },
+    {
+      "id": 1,
+      "kind": "Verso",
+      "label": "Estrofa",
+      "bar_start": 4,
+      "bar_end": 12
+    },
+    {
+      "id": 2,
+      "kind": "Coro",
+      "label": "Coro",
+      "bar_start": 12,
+      "bar_end": 20
+    },
+    {
+      "id": 3,
+      "kind": "Outro",
+      "label": "Final",
+      "bar_start": 20,
+      "bar_end": 26
+    }
+  ],
+  "sync_points": [],
+  "next_id": 541
+}

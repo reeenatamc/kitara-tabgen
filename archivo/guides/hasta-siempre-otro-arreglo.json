@@ -1,0 +1,5668 @@
+{
+ "tempo": 100.0,
+ "capo": 2,
+ "bars": [
+  {
+   "step": 1,
+   "section": "Intro",
+   "mood": "suave",
+   "chord": "Mi menor",
+   "cue": "",
+   "tip": "Mi menor: solo el dedo medio, en cuerda 4 traste 2. Toca una cuerda por vez, de la 6 hacia la 1 y de vuelta.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 1,
+   "section": "Intro",
+   "mood": "suave",
+   "chord": "Re",
+   "cue": "",
+   "tip": "Postura de Re. En el tiempo 3 el meñique pisa cuerda 1 traste 3 y enseguida vuelves al traste 2.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "section": "Intro",
+   "mood": "suave",
+   "chord": "Do",
+   "cue": "",
+   "tip": "Postura de Do. Sube de la cuerda 5 a la 1 y baja.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 5,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "section": "Intro",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "",
+   "tip": "Postura de Si7, con el meñique en cuerda 1 traste 2.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "Aprendimos a...",
+   "tip": "Índice en el traste 5. La cuerda 1 canta: al aire, traste 5, traste 8 con el meñique y al final traste 7. Los bajos son cuerdas al aire.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "Aprendimos a...",
+   "tip": "Cejilla con el índice en el traste 7. Meñique en cuerda 2 traste 10 y luego medio en traste 8.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "desde la histórica...",
+   "tip": "Empieza igual que el compás 5. Después del traste 8 baja: traste 7, cuerda 2 traste 5, cuerda 1 traste 5.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "desde la histórica...",
+   "tip": "Cejilla en el traste 7 otra vez. El medio va y viene entre la cuerda 2 y la cuerda 3, traste 8.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 5,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Mi menor, Sol",
+   "cue": "donde el sol...",
+   "tip": "Baja la mano a los primeros trastes. La cuerda 1 canta: al aire, traste 2, traste 3. En el tiempo 3 el medio pisa cuerda 6 traste 3.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 3,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 5,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "donde el sol...",
+   "tip": "Medio fijo en cuerda 5 traste 2. El meñique estira hasta el traste 5 de la cuerda 1; si no llega, suelta el medio.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "le puso cerco...",
+   "tip": "Igual al compás 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "section": "Estrofa 1",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "le puso cerco...",
+   "tip": "Igual al compás 8, pero termina en la cuerda 2 al aire: aprovecha para subir la mano al traste 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 7,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Mi menor",
+   "cue": "Aquí se queda...",
+   "tip": "Mi menor arriba: índice en cuerda 1 traste 7, medio en cuerda 2 traste 8, anular en cuerda 3 traste 9. No sueltes la postura.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 7,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Si7",
+   "cue": "Aquí se queda...",
+   "tip": "Cejilla en el traste 7. La cuerda 1 canta: traste 10 con el meñique, traste 8 con el medio y traste 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "M",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 8,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Mi menor",
+   "cue": "la entrañable...",
+   "tip": "La postura del compás 13. Entra solo el bajo y la cuerda 2 traste 8 suena dos veces seguidas.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 8,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Si7",
+   "cue": "la entrañable...",
+   "tip": "Igual al compás 14.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "M",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 9,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Mi menor",
+   "cue": "de tu querida...",
+   "tip": "Armónicos: roza la cuerda encima del traste 12 sin apretar y levanta el dedo cuando suene. El ritmo cambia: sigue la cuenta.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 3,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 9,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Re",
+   "cue": "de tu querida...",
+   "tip": "Índice acostado en el traste 10 sobre las cuerdas 1 y 2, medio en cuerda 3 traste 11. Al final el meñique toca el traste 12.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 10,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Do",
+   "cue": "Comandante Che Guevara",
+   "tip": "Cejilla en el traste 8. El meñique pisa cuerda 3 traste 11, lo deja sonar un tiempo entero con vibrato y sube: cuerda 2 traste 8 y traste 10.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": true
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 10,
+   "section": "Coro 1",
+   "mood": "fuerte",
+   "chord": "Si7",
+   "cue": "Comandante Che Guevara",
+   "tip": "Baja la cejilla al traste 7. La frase cae: cuerda 1 traste 8, cuerda 2 traste 10 y termina en cuerda 1 traste 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "Tu mano gloriosa...",
+   "tip": "Índice en el traste 5. La cuerda 1 canta: al aire, traste 5, traste 8 con el meñique y al final traste 7. Los bajos son cuerdas al aire.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "Tu mano gloriosa...",
+   "tip": "Cejilla con el índice en el traste 7. Meñique en cuerda 2 traste 10 y luego medio en traste 8.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "sobre la historia...",
+   "tip": "Empieza igual que el compás 5. Después del traste 8 baja: traste 7, cuerda 2 traste 5, cuerda 1 traste 5.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 4,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "sobre la historia...",
+   "tip": "Cejilla en el traste 7 otra vez. El medio va y viene entre la cuerda 2 y la cuerda 3, traste 8.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 5,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Mi menor, Sol",
+   "cue": "cuando todo...",
+   "tip": "Baja la mano a los primeros trastes. La cuerda 1 canta: al aire, traste 2, traste 3. En el tiempo 3 el medio pisa cuerda 6 traste 3.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 3,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 5,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "cuando todo...",
+   "tip": "Medio fijo en cuerda 5 traste 2. El meñique estira hasta el traste 5 de la cuerda 1; si no llega, suelta el medio.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Mi menor, La menor",
+   "cue": "se despierta...",
+   "tip": "Igual al compás 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 5,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 5,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "section": "Estrofa 2",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "se despierta...",
+   "tip": "Igual al compás 8, pero termina en la cuerda 2 al aire: aprovecha para subir la mano al traste 7.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 11,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Mi menor",
+   "cue": "Aquí se queda...",
+   "tip": "La postura del compás 13, ahora con varias cuerdas juntas. Lo que está en la misma columna se toca a la vez.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 9,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 9,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 11,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Si7",
+   "cue": "Aquí se queda...",
+   "tip": "La postura del compás 14 con más cuerdas. La nota azul es la melodía: que se oiga más que las otras.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "M",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 12,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Mi menor",
+   "cue": "la entrañable...",
+   "tip": "Como el compás 15, con cuerdas añadidas.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 9,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 9,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 12,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Si7",
+   "cue": "la entrañable...",
+   "tip": "Igual al compás 30.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "M",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 13,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Mi menor",
+   "cue": "de tu querida...",
+   "tip": "Armónicos de dos y tres cuerdas: un dedo acostado encima del traste 12, sin apretar.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 3,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 11,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": true,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 13,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Re",
+   "cue": "de tu querida...",
+   "tip": "La postura del compás 18, completa.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 10,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 14,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Do",
+   "cue": "Comandante Che Guevara",
+   "tip": "La frase del comandante. Debajo del traste 11 largo suena la cuerda 6. Déjalo respirar antes de subir.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 10,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 10,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 11,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": true
+      },
+      {
+       "string": 6,
+       "fret": 8,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 8,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 10,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 9,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 14,
+   "section": "Coro 2",
+   "mood": "muy fuerte",
+   "chord": "Si7",
+   "cue": "Comandante Che Guevara",
+   "tip": "Cejilla en el traste 7. Cae en cuerda 1 traste 8 y termina en traste 7, con el acorde debajo.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 8,
+       "finger": "A",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 10,
+       "finger": "Ñ",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 7,
+       "finger": "I",
+       "melody": true,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 8,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 7,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 1,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Mi menor",
+   "cue": "",
+   "tip": "Mi menor: solo el dedo medio, en cuerda 4 traste 2. Toca una cuerda por vez, de la 6 hacia la 1 y de vuelta.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 1,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Re",
+   "cue": "",
+   "tip": "Postura de Re. En el tiempo 3 el meñique pisa cuerda 1 traste 3 y enseguida vuelves al traste 2.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 3,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Do",
+   "cue": "",
+   "tip": "Postura de Do. Sube de la cuerda 5 a la 1 y baja.",
+   "slower": null,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 5,
+       "fret": 3,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Si7",
+   "cue": "",
+   "tip": "Postura de Si7, con el meñique en cuerda 1 traste 2. Aquí empieza a frenar.",
+   "slower": 84.0,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 2,
+       "finger": "Ñ",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 2,
+       "finger": "A",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 14,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 1,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 15,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Mi menor",
+   "cue": "",
+   "tip": "Mi menor subiendo cuerda por cuerda. Al final, armónicos del traste 12 en las cuerdas 1, 2 y 3.",
+   "slower": 72.0,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 2,
+     "notes": [
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 4,
+     "notes": [
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 6,
+     "notes": [
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 8,
+     "notes": [
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 10,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    },
+    {
+     "slot": 12,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 12,
+       "finger": "",
+       "melody": false,
+       "harmonic": true,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "step": 15,
+   "section": "Final",
+   "mood": "suave",
+   "chord": "Mi menor",
+   "cue": "",
+   "tip": "Mi menor completo, rasgueado lento con el pulgar, de la cuerda 6 a la 1. Déjalo sonar.",
+   "slower": 60.0,
+   "beats": [
+    {
+     "slot": 0,
+     "notes": [
+      {
+       "string": 1,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 2,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 3,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 4,
+       "fret": 2,
+       "finger": "M",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 5,
+       "fret": 2,
+       "finger": "I",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      },
+      {
+       "string": 6,
+       "fret": 0,
+       "finger": "",
+       "melody": false,
+       "harmonic": false,
+       "vibrato": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
