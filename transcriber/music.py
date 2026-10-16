@@ -53,20 +53,22 @@ def nearest_slot(grid, time):
 def subdivide(gap, period):
     """Cuántas semicorcheas caben en el hueco entre dos golpes detectados.
 
-    El detector de pulso no marca todos los golpes: se salta los que no reconoce y deja
-    huecos que valen más de un pulso. Repartir siempre cuatro semicorcheas da por bueno que
-    cada hueco es un pulso, y cuando no lo es la rejilla pierde o gana tiempo justo ahí.
+    El detector de pulso se salta los golpes que no reconoce y deja huecos que valen dos
+    pulsos o más. Repartir siempre cuatro semicorcheas da por bueno que cada hueco es un
+    pulso, y donde no lo es la rejilla pierde tiempo y desplaza todo lo que viene después.
 
-    Eso desplazaba tres compases de «Solamente uno»: un hueco de pulso y cuarto se llevaba
-    cuatro semicorcheas en vez de cinco, y de ahí en adelante la melodía caía tarde. Las
-    notas eran las correctas y el compás salía descuadrado igual.
+    La corrección va en pulsos enteros, no en semicorcheas: el detector encuentra un golpe o
+    no lo encuentra, nunca se deja medio. Redondear a semicorcheas parecía más fino y era
+    peor, porque entonces el vaivén normal del tempo —un hueco de pulso y cuarto en una
+    grabación de guitarra sola— se convierte en una semicorchea de más que corre el resto de
+    la pieza. Medido en «Solamente uno»: así bajaba del 52 % al 44 %.
 
-    Nunca devuelve cero: dos golpes casi pegados tienen que repartir al menos una, o se
-    pierden las notas que caen en ese hueco.
+    Nunca devuelve menos de cuatro: un hueco más corto que un pulso es el mismo pulso
+    medido con prisa, no menos música.
     """
     if period <= 0:
         return 4
-    return max(1, round(gap / period * 4))
+    return 4 * max(1, round(gap / period))
 
 
 def quantize(notes, grid, inner_voices=1):

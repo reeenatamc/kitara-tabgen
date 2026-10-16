@@ -62,23 +62,26 @@ class Subdividir(unittest.TestCase):
     def test_un_hueco_de_un_pulso_da_cuatro_semicorcheas(self):
         self.assertEqual(subdivide(1.0, 1.0), 4)
 
-    def test_un_hueco_de_dos_pulsos_da_ocho(self):
-        # Si el detector se salta un golpe, el hueco vale dos pulsos y hay que repartir ocho.
+    def test_un_golpe_saltado_da_ocho(self):
+        # Si el detector se deja un golpe, el hueco vale dos pulsos: ocho semicorcheas.
         self.assertEqual(subdivide(2.0, 1.0), 8)
 
-    def test_un_hueco_de_pulso_y_cuarto_da_cinco(self):
-        # El caso que desplazaba tres compases de «Solamente uno»: con cuatro semicorcheas
-        # metidas en un hueco de pulso y cuarto, la melodía de ahí en adelante cae tarde.
-        self.assertEqual(subdivide(1.25, 1.0), 5)
+    def test_dos_golpes_saltados_dan_doce(self):
+        self.assertEqual(subdivide(3.0, 1.0), 12)
 
-    def test_redondea_al_numero_entero_de_semicorcheas(self):
-        self.assertEqual(subdivide(1.1, 1.0), 4, "1,1 pulsos son 4,4 semicorcheas")
-        self.assertEqual(subdivide(1.4, 1.0), 6, "1,4 pulsos son 5,6 semicorcheas")
+    def test_el_vaiven_del_tempo_no_mueve_la_rejilla(self):
+        # Un hueco de pulso y cuarto es el mismo pulso tocado con holgura, no una
+        # semicorchea más. Tratarlo como semicorchea extra corría el resto de la pieza y
+        # bajaba el acierto de «Solamente uno» del 52 % al 44 %.
+        self.assertEqual(subdivide(1.25, 1.0), 4)
+        self.assertEqual(subdivide(0.8, 1.0), 4)
 
-    def test_nunca_devuelve_cero(self):
-        # Dos golpes casi pegados no pueden dejar el hueco sin repartir: se perderían las
-        # notas que caen ahí.
-        self.assertEqual(subdivide(0.01, 1.0), 1)
+    def test_un_hueco_de_pulso_y_medio_se_redondea_a_dos(self):
+        # A partir de la mitad ya se parece más a un golpe saltado que a holgura.
+        self.assertEqual(subdivide(1.6, 1.0), 8)
+
+    def test_nunca_devuelve_menos_de_un_pulso(self):
+        self.assertEqual(subdivide(0.01, 1.0), 4)
 
     def test_un_periodo_invalido_no_revienta(self):
         self.assertEqual(subdivide(0.5, 0.0), 4)
