@@ -21,7 +21,9 @@ BARS_PER_SECTION = 8
 
 def _melody_string(combo):
     """La cuerda que lleva la melodía, para acentuarla. Nada si el pulso es sólo bajo."""
-    sounds_high = any(fit_range(TUNING[string - 1] + fret) >= MELODY_FLOOR for string, fret in combo)
+    sounds_high = any(
+        fit_range(TUNING[string - 1] + fret) >= MELODY_FLOOR for string, fret in combo
+    )
     return min(combo)[0] if sounds_high else None
 
 
@@ -32,7 +34,7 @@ def bar_events(placed, start):
     primera lleva la postura completa con dedos; las demás repiten las notas ligadas.
     """
     hits = [slot for slot in range(start, start + BAR_SLOTS) if slot in placed]
-    marks = [start] + hits if not hits or hits[0] != start else hits
+    marks = [start, *hits] if not hits or hits[0] != start else hits
 
     events = []
     for n, slot in enumerate(marks):

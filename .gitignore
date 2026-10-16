@@ -5,4 +5,3 @@ __pycache__/
 # Lo que sale de cada ejecución: audio, AlphaTex y wav intermedios.
 out/
 check/target/
-check/Cargo.lock

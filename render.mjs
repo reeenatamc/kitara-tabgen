@@ -1,4 +1,5 @@
-// Renders an AlphaTex file to wav with alphaTab. Copy into fretwork/scripts to run: it needs the repo's node_modules.
+// Renderiza un AlphaTex a wav con alphaTab. Se copia en kitara/scripts para correrlo:
+// necesita el node_modules de ese repo.
 import { readFileSync, writeFileSync } from 'node:fs';
 import * as alphaTab from '@coderline/alphatab';
 const [tex, out] = process.argv.slice(2);
