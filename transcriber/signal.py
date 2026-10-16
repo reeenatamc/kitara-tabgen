@@ -39,9 +39,23 @@ def detect_notes(wav):
 def beat_grid(wav):
     """Los instantes de cada semicorchea, y el tempo que sale de ellos.
 
-    librosa sólo marca los golpes donde los reconoce, así que la rejilla se extiende hacia
-    atrás y hacia delante con el mismo periodo: si la grabación empieza con una nota antes
-    del primer golpe detectado, sin eso se quedaría fuera del primer compás.
+    Se le da al detector la señal tal cual. Probé realzar la parte percusiva antes, porque
+    el detector se guía por los ataques y un render sintetizado no tiene el golpe de la uña:
+    en el render de «Solamente uno» el tempo pasaba de 74 a 108 pulsos por minuto, con 110
+    de real, y el acierto de melodía subía del 6 % al 64 %.
+
+    Pero en el video, que es el caso real, bajaba del 53 % al 18 %. Una grabación de verdad
+    ya tiene ataques de sobra, y separar la señal le mueve la fase. Los renders son más
+    fáciles en todo menos en esto, así que la mejora era de los renders y el perjuicio del
+    caso que importa. Está medido en el issue para no volver a intentarlo a ciegas.
+
+    Lo que no arregla nada de esto es el tempo al doble o a la mitad: `salvatore` va a 60 y
+    se detecta a 117, que es una lectura musicalmente válida —cada compás sale partido en
+    dos— pero entonces las barras no se corresponden con la tablatura escrita a mano.
+
+    La rejilla se extiende hacia los dos extremos con el mismo periodo, porque el detector
+    no llega al principio ni al final de la grabación, y sin eso las primeras notas se
+    quedarían fuera del primer compás.
     """
     y, sr = librosa.load(wav, sr=22050)
     tempo, beats = librosa.beat.beat_track(y=y, sr=sr, start_bpm=100, units="time")
