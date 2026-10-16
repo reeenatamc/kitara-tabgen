@@ -71,6 +71,36 @@ def subdivide(gap, period):
     return 4 * max(1, round(gap / period))
 
 
+def grid_step(grid):
+    """Cuánto dura una semicorchea en la rejilla."""
+    if len(grid) < 2:
+        return 0.0
+    gaps = sorted(grid[i + 1] - grid[i] for i in range(len(grid) - 1))
+    return gaps[len(gaps) // 2]
+
+
+def timing_bias(notes, grid):
+    """El desfase sistemático entre los ataques detectados y la rejilla, en semicorcheas.
+
+    Los dos relojes no coinciden: el detector de notas marca el ataque un poco antes de
+    donde el detector de pulso pone el golpe. En «Solamente uno» son −0,25 semicorcheas, 34
+    ms, y es constante de principio a fin.
+
+    Un cuarto de semicorchea no mueve ninguna nota por sí solo, porque el redondeo aguanta
+    hasta la mitad. Lo que hace es dejar la pieza entera montada cerca del borde: con ese
+    margen comido, la holgura normal de tocar basta para que una nota salte a la semicorchea
+    siguiente, y eso sí desplaza compases enteros.
+
+    Se mide con la mediana y no con el promedio: unas pocas notas muy desplazadas, que es lo
+    que pasa donde el modelo se equivoca, no deben mover la corrección.
+    """
+    step = grid_step(grid)
+    if not notes or step <= 0:
+        return 0.0
+    offsets = sorted((start - grid[nearest_slot(grid, start)]) / step for start, *_ in notes)
+    return offsets[len(offsets) // 2]
+
+
 def quantize(notes, grid, inner_voices=1):
     """Qué suena en cada semicorchea: `posición -> {altura: amplitud}`.
 
@@ -82,8 +112,9 @@ def quantize(notes, grid, inner_voices=1):
     fuerte casi siempre es el armónico de esa, no una nota pisada.
     """
     by_slot = {}
+    shift = timing_bias(notes, grid) * grid_step(grid)
     for start, _, pitch, amp in notes:
-        slot = nearest_slot(grid, start)
+        slot = nearest_slot(grid, start - shift)
         current = by_slot.setdefault(slot, {})
         current[pitch] = max(current.get(pitch, 0), amp)
 
