@@ -83,7 +83,7 @@ def timing_bias(notes, grid):
     """El desfase sistemático entre los ataques detectados y la rejilla, en semicorcheas.
 
     Los dos relojes no coinciden: el detector de notas marca el ataque un poco antes de
-    donde el detector de pulso pone el golpe. En «Solamente uno» son −0,25 semicorcheas, 34
+    donde el detector de pulso pone el golpe. En «Solamente uno» son -0,25 semicorcheas, 34
     ms, y es constante de principio a fin.
 
     Un cuarto de semicorchea no mueve ninguna nota por sí solo, porque el redondeo aguanta

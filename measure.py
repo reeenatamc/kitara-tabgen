@@ -30,7 +30,8 @@ DEFAULT_RANGE = (17, 31)
 
 def melody_by_bar(path):
     """Por compás, las parejas `(semicorchea, altura)` de la melodía y el total de notas."""
-    score = json.load(open(path, encoding="utf-8"))
+    with open(path, encoding="utf-8") as f:
+        score = json.load(f)
     out = []
     for bar in score["tracks"][0]["staves"][0]["bars"]:
         position, melody, total = 0.0, set(), 0
