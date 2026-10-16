@@ -112,53 +112,6 @@ def timing_bias(notes, grid):
     return offsets[len(offsets) // 2]
 
 
-def steady_grid(beats, subdivisions=4):
-    """Una rejilla regular de semicorcheas ajustada a los golpes detectados.
-
-    El detector de pulso no da golpes regulares: en «Solamente uno» los huecos van de 0,46 a
-    0,67 segundos aunque la pieza se toque a 112 estables. Repartir semicorcheas entre dos
-    golpes consecutivos traslada ese temblor a cada semicorchea, y los compases salen
-    corridos una o dos: el compás 23 una antes, el 24 dos después, con las notas correctas.
-
-    Aquí se hace al revés. A cada golpe se le asigna el número de pulso que le toca, y con
-    todos ellos se ajusta por mínimos cuadrados un pulso constante. Así un golpe mal puesto
-    lo corrigen los demás, y un golpe que el detector se saltó no desplaza nada, porque su
-    número de pulso sale del tiempo y no de su posición en la lista.
-
-    Devuelve `(rejilla, periodo)`. Asume tempo constante, que es lo que vale para una pieza
-    tocada a pulso; una con cambios de tempo de verdad necesitaría ajustar por tramos.
-    """
-    if len(beats) < 2:
-        return list(beats), 0.0
-
-    gaps = sorted(beats[i + 1] - beats[i] for i in range(len(beats) - 1))
-    period = gaps[len(gaps) // 2]
-    if period <= 0:
-        return list(beats), 0.0
-
-    # El número de pulso de cada golpe sale del tiempo, así que saltarse uno no corre nada.
-    indices = [round((b - beats[0]) / period) for b in beats]
-
-    n = len(beats)
-    sum_k = sum(indices)
-    sum_t = sum(beats)
-    sum_kk = sum(k * k for k in indices)
-    sum_kt = sum(k * t for k, t in zip(indices, beats, strict=True))
-    span = n * sum_kk - sum_k * sum_k
-    if span == 0:
-        return list(beats), period
-
-    step = (n * sum_kt - sum_k * sum_t) / span
-    start = (sum_t - step * sum_k) / n
-
-    grid = [
-        start + (k + j / subdivisions) * step
-        for k in range(indices[0], indices[-1] + 1)
-        for j in range(subdivisions)
-    ]
-    return grid, step
-
-
 def quantize(notes, grid, inner_voices=1):
     """Qué suena en cada semicorchea: `posición -> {altura: amplitud}`.
 
