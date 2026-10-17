@@ -21,7 +21,7 @@ from transcriber import draft, guitar, music, signal
 def main(wav, song_path, guide_path, title):
     notes = signal.detect_notes(wav)
     grid, bpm = signal.beat_grid(wav)
-    slots = music.quantize(music.clean(notes), grid)
+    slots = music.quantize(music.clean(music.drop_knocks(notes)), grid)
 
     starts = music.bar_starts(slots, music.bar_phase(slots))
     placed = guitar.place(slots)

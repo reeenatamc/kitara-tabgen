@@ -18,6 +18,40 @@ BASS_CEILING = 52
 BAR_SLOTS = 16
 
 
+#: Cuerdas que tiene una guitarra. Más ataques a la vez que esto no es música.
+STRINGS = 6
+
+#: Ventana en segundos dentro de la cual los ataques cuentan como simultáneos.
+TOGETHER = 0.05
+
+
+def drop_knocks(notes, strings=STRINGS, together=TOGETHER):
+    """Quita los ataques que salen de un golpe en la caja o en el micrófono.
+
+    Un golpe es ruido de banda ancha: el detector dispara a la vez en decenas de alturas que
+    no tienen nada que ver entre sí. En el video de «Solamente uno» hay uno en el segundo 73
+    que entra como un acorde de veintiséis notas.
+
+    Una guitarra tiene seis cuerdas, así que más de seis ataques simultáneos no se pueden
+    tocar: eso no es un acorde, es un porrazo. Se descarta el grupo entero, porque dentro de
+    un golpe no hay forma de saber cuál de las alturas era música.
+
+    Importa más de lo que parece, porque las amplitudes que da el detector son relativas: un
+    golpe mucho más fuerte que la música deja a todo lo demás por debajo del umbral.
+    """
+    kept = []
+    group = []
+    for note in notes:
+        if group and note[0] - group[0][0] >= together:
+            if len(group) <= strings:
+                kept.extend(group)
+            group = []
+        group.append(note)
+    if len(group) <= strings:
+        kept.extend(group)
+    return kept
+
+
 def clean(notes, min_amplitude=0.35, retrigger=0.06, margin=1.1):
     """Quita las notas flojas y las que son una cuerda que todavía sonaba.
 
@@ -135,8 +169,15 @@ def quantize(notes, grid, inner_voices=1):
 def bar_phase(slots):
     """En qué semicorchea del compás caen las barras.
 
-    Los bajos marcan el compás: se prueba cada uno de los cuatro tiempos como principio y
-    gana el que deje más peso grave en el primero y el tercero, contando doble el primero.
+    Los bajos marcan el compás: se prueba cada posición como principio y gana la que deje
+    más peso grave en el primer y el tercer tiempo, contando doble el primero.
+
+    Se prueban las dieciséis, no sólo los cuatro tiempos. El detector de pulso no pone sus
+    golpes exactamente donde cae el pulso, así que la rejilla entera puede estar corrida una
+    o dos semicorcheas; si sólo se prueban los tiempos no hay ninguna fase que arregle eso.
+    Medido en «Solamente uno»: correr la rejilla tres semicorcheas a mano subía el arranque
+    del 24 % al 63 %, y eso era justo lo que la fase no podía hacer.
+
     Si esto se equivoca la tablatura sale corrida, y entonces no hay nada que corregir de
     oído, hay que rehacerla.
     """
@@ -145,7 +186,7 @@ def bar_phase(slots):
         for slot, voices in slots.items()
     }
     return max(
-        range(0, BAR_SLOTS, 4),
+        range(BAR_SLOTS),
         key=lambda offset: (
             sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS in (0, 8))
             + sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS == 0)
