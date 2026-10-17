@@ -21,13 +21,17 @@ from transcriber import draft, guitar, music, signal
 def main(wav, song_path, guide_path, title):
     notes = signal.detect_notes(wav)
     grid, bpm = signal.beat_grid(wav)
-    slots = music.quantize(music.clean(music.drop_knocks(notes)), grid)
+    heard = music.quantize(music.clean(music.drop_knocks(notes)), grid)
 
-    starts = music.bar_starts(slots, music.bar_phase(slots))
+    starts = music.bar_starts(heard, music.bar_phase(heard))
+    chords = draft.chords_of(heard, starts)
+
+    # El bajo se escribe, no se copia: el pulgar del fingerstyle es una alternancia regular
+    # y los huecos del detector en el grave suenan a error.
+    slots = draft.harmonize(heard, starts, chords)
     placed = guitar.place(slots)
 
     plan = [(draft.bar_events(placed, start), "MP", False) for start in starts]
-    chords = draft.chords_of(slots, starts)
 
     score = write_song(
         song_path,

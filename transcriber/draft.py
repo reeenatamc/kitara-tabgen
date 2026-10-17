@@ -7,7 +7,7 @@ validador lo rechaza.
 """
 
 from .guitar import TUNING, fit_range, notation
-from .music import BAR_SLOTS, chord_name
+from .music import BAR_SLOTS, NOTE_NAMES, chord_name
 
 #: Figuras disponibles, en semicorcheas y de mayor a menor.
 FIGURES = (16, 12, 8, 6, 4, 3, 2, 1)
@@ -17,6 +17,75 @@ MELODY_FLOOR = 57
 
 #: Compases por sección, mientras no haya forma detectada de verdad.
 BARS_PER_SECTION = 8
+
+
+#: Dónde puede caer el bajo del pulgar: de la cuarta cuerda hacia abajo.
+BASS_RANGE = (40, 55)
+
+#: Desde esta altura una nota es de los dedos, no del pulgar, y se deja como se oyó.
+BASS_FLOOR = 56
+
+#: Los tiempos donde el pulgar pone fundamental y quinta.
+THUMB_BEATS = (0, 8)
+
+
+def thumb_bass(chord, slot):
+    """La altura que toca el pulgar en ese tiempo, o nada si no hay acorde.
+
+    En fingerstyle el pulgar lleva negras constantes alternando la fundamental y la quinta
+    del acorde: es el esqueleto de la pieza, y lo que hace que un arreglo suene armónico
+    aunque la melodía de arriba vaya sincopada.
+
+    Se escribe el bajo que el acorde pide, no el que el detector midió. Un bajo detectado a
+    medias deja huecos que suenan a error; una alternancia regular suena a música, y si el
+    acorde está bien es además lo que se toca de verdad.
+    """
+    if not chord:
+        return None
+    root = NOTE_NAMES.index(chord.rstrip("m7"))
+    wanted = root if slot == THUMB_BEATS[0] else (root + 7) % 12
+    low, high = BASS_RANGE
+    for pitch in range(low, high + 1):
+        if pitch % 12 == wanted:
+            return pitch
+    return None
+
+
+def harmonize(slots, starts, chords):
+    """Cambia el bajo detectado por la alternancia regular del pulgar.
+
+    Deja la melodía y las voces internas tal como se oyeron, y reescribe sólo el registro
+    grave: fundamental en el primer tiempo, quinta en el tercero, nada en los demás.
+
+    Es la diferencia entre transcribir y arreglar. Lo detectado en el grave viene a trozos
+    —el detector pierde ataques del pulgar porque quedan tapados— y esos huecos suenan a
+    error. La alternancia regular suena a música, y donde el acorde está bien acertado es
+    además lo que se toca de verdad.
+
+    El precio es que deja de ser literal: si el acorde se detectó mal, el bajo sale mal con
+    seguridad en vez de salir a medias. Por eso lo que más vale la pena mejorar ahora es la
+    detección de acordes, que es lo que sostiene todo esto.
+    """
+    bass_by_bar = {}
+    for start, chord in zip(starts, chords, strict=True):
+        for beat in THUMB_BEATS:
+            pitch = thumb_bass(chord, beat)
+            if pitch is not None:
+                bass_by_bar[start + beat] = pitch
+
+    harmonized = {}
+    for slot, voices in slots.items():
+        upper = {p: a for p, a in voices.items() if p >= BASS_FLOOR}
+        if slot in bass_by_bar:
+            upper[bass_by_bar[slot]] = max(voices.values(), default=0.7)
+        if upper:
+            harmonized[slot] = upper
+
+    # Los tiempos del pulgar que no tenían nada detectado también llevan su bajo.
+    for slot, pitch in bass_by_bar.items():
+        harmonized.setdefault(slot, {pitch: 0.7})
+
+    return harmonized
 
 
 def _melody_string(combo):
