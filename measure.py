@@ -179,13 +179,19 @@ def report(rows):
     )
 
 
-def rows_for(draft_slug, reference_slug=None, first=None, last=None):
-    """La comparación, para llamarla desde otro script sin imprimir nada."""
-    hand = melody_by_bar(paths.song(reference_slug or draft_slug.removesuffix("-auto")))
-    draft = melody_by_bar(paths.song(draft_slug))
+def rows_between(reference_path, draft_path, first=None, last=None):
+    """La comparación entre dos archivos de partitura."""
+    hand = melody_by_bar(reference_path)
+    draft = melody_by_bar(draft_path)
     a = int(first) if first is not None else 0
     b = int(last) if last is not None else len(hand)
     return compare(hand, draft, a, b)
+
+
+def rows_for(draft_slug, reference_slug=None, first=None, last=None):
+    """Lo mismo, con los nombres de dos canciones de kitara."""
+    reference = paths.song(reference_slug or draft_slug.removesuffix("-auto"))
+    return rows_between(reference, paths.song(draft_slug), first, last)
 
 
 def main(draft_slug, reference_slug=None, first=None, last=None):
