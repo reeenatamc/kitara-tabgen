@@ -29,6 +29,10 @@ def main(wav, song_path, guide_path, title):
     # El bajo se escribe, no se copia: el pulgar del fingerstyle es una alternancia regular
     # y los huecos del detector en el grave suenan a error.
     slots = draft.harmonize(heard, starts, chords)
+
+    # La pieza repite, así que las repeticiones se corrigen unas a otras: lo que coincide en
+    # la mayoría se queda y lo que sale una sola vez era un fallo del detector.
+    slots = draft.unify_repeats(slots, starts)
     placed = guitar.place(slots)
 
     plan = [(draft.bar_events(placed, start), "MP", False) for start in starts]

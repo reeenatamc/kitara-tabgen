@@ -88,6 +88,84 @@ def harmonize(slots, starts, chords):
     return harmonized
 
 
+#: Cuánto se tienen que parecer dos compases para contarlos como el mismo motivo.
+SAME_BAR = 0.55
+
+#: En qué fracción de las repeticiones tiene que aparecer una nota para quedarse.
+MAJORITY = 0.5
+
+
+def bar_signature(slots, start):
+    """Las notas de un compás como posiciones relativas a su barra."""
+    return {
+        (slot - start, pitch)
+        for slot in range(start, start + BAR_SLOTS)
+        for pitch in slots.get(slot, {})
+    }
+
+
+def similarity(a, b):
+    """Qué fracción comparten dos compases, de 0 a 1."""
+    if not a and not b:
+        return 1.0
+    return len(a & b) / len(a | b) if (a | b) else 0.0
+
+
+def group_repeats(signatures, threshold=SAME_BAR):
+    """Agrupa los compases que son el mismo motivo tocado otra vez.
+
+    Una pieza de fingerstyle repite: la versión escrita a mano de «Solamente uno» cubre
+    treinta y cuatro compases con unos quince motivos con nombre. El transcriptor trataba
+    cada compás como nuevo, así que cada uno cargaba sus propios errores de detección.
+    """
+    groups = []
+    for i, signature in enumerate(signatures):
+        for group in groups:
+            if similarity(signature, signatures[group[0]]) >= threshold:
+                group.append(i)
+                break
+        else:
+            groups.append([i])
+    return groups
+
+
+def vote(signatures, group, majority=MAJORITY):
+    """Las notas que aparecen en la mayoría de las repeticiones de un motivo.
+
+    Es lo que limpia el borrador sin tocar nada del detector: una nota que suena en cinco
+    de las seis pasadas es música, y una que sale en una sola es un fallo. Las repeticiones
+    se corrigen unas a otras.
+    """
+    counts = {}
+    for i in group:
+        for note in signatures[i]:
+            counts[note] = counts.get(note, 0) + 1
+    needed = max(1, round(len(group) * majority))
+    return {note for note, count in counts.items() if count >= needed}
+
+
+def unify_repeats(slots, starts):
+    """Escribe igual los compases que son el mismo motivo, votando entre sus repeticiones.
+
+    Si un motivo aparece seis veces, las seis salen con lo que coincidió en la mayoría. Eso
+    quita las notas que el detector inventó una sola vez y recupera las que perdió en
+    algunas pasadas, y además hace que la pieza suene coherente: un arreglo donde el mismo
+    compás suena distinto cada vez no se oye como música, se oye como un error.
+    """
+    signatures = [bar_signature(slots, start) for start in starts]
+    groups = group_repeats(signatures)
+
+    unified = {}
+    for group in groups:
+        agreed = vote(signatures, group)
+        for i in group:
+            start = starts[i]
+            for offset, pitch in agreed:
+                amplitude = slots.get(start + offset, {}).get(pitch, 0.6)
+                unified.setdefault(start + offset, {})[pitch] = amplitude
+    return unified
+
+
 def _melody_string(combo):
     """La cuerda que lleva la melodía, para acentuarla. Nada si el pulso es sólo bajo."""
     sounds_high = any(
