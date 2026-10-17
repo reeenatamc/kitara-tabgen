@@ -29,6 +29,20 @@ def guide(slug):
 #: Los arreglos superados viven aquí, no en kitara: eran pasos de una iteración.
 ARCHIVE = Path(__file__).resolve().parent / "archive"
 
+#: Los borradores de prueba, que no son tablaturas de nadie y no entran en kitara.
+DRAFTS = Path(__file__).resolve().parent / "out" / "drafts"
+
+
+def draft(slug):
+    """La ruta de un borrador de prueba, dentro de este repo y fuera de git.
+
+    Los borradores que saca `validate.py` no son tablaturas: son material de medición que se
+    rehace en cada ejecución. Escribirlos en `songs/` de kitara ensuciaba ese repo con
+    archivos que no son de nadie.
+    """
+    DRAFTS.mkdir(parents=True, exist_ok=True)
+    return DRAFTS / f"{slug}.json"
+
 
 def archived_song(slug):
     """La ruta de una canción archivada, dentro de este repo.
