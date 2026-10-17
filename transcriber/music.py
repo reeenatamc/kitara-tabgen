@@ -18,6 +18,40 @@ BASS_CEILING = 52
 BAR_SLOTS = 16
 
 
+#: Cuerdas que tiene una guitarra. Más ataques a la vez que esto no es música.
+STRINGS = 6
+
+#: Ventana en segundos dentro de la cual los ataques cuentan como simultáneos.
+TOGETHER = 0.05
+
+
+def drop_knocks(notes, strings=STRINGS, together=TOGETHER):
+    """Quita los ataques que salen de un golpe en la caja o en el micrófono.
+
+    Un golpe es ruido de banda ancha: el detector dispara a la vez en decenas de alturas que
+    no tienen nada que ver entre sí. En el video de «Solamente uno» hay uno en el segundo 73
+    que entra como un acorde de veintiséis notas.
+
+    Una guitarra tiene seis cuerdas, así que más de seis ataques simultáneos no se pueden
+    tocar: eso no es un acorde, es un porrazo. Se descarta el grupo entero, porque dentro de
+    un golpe no hay forma de saber cuál de las alturas era música.
+
+    Importa más de lo que parece, porque las amplitudes que da el detector son relativas: un
+    golpe mucho más fuerte que la música deja a todo lo demás por debajo del umbral.
+    """
+    kept = []
+    group = []
+    for note in notes:
+        if group and note[0] - group[0][0] >= together:
+            if len(group) <= strings:
+                kept.extend(group)
+            group = []
+        group.append(note)
+    if len(group) <= strings:
+        kept.extend(group)
+    return kept
+
+
 def clean(notes, min_amplitude=0.35, retrigger=0.06, margin=1.1):
     """Quita las notas flojas y las que son una cuerda que todavía sonaba.
 

@@ -12,6 +12,7 @@ from transcriber.music import (
     bar_starts,
     chord_name,
     clean,
+    drop_knocks,
     nearest_slot,
     quantize,
     subdivide,
@@ -21,6 +22,37 @@ from transcriber.music import (
 def nota(inicio, altura, amp=1.0, fin=None):
     """Una nota detectada: `(inicio, fin, altura MIDI, amplitud)`."""
     return (inicio, fin if fin is not None else inicio + 0.2, altura, amp)
+
+
+class Porrazos(unittest.TestCase):
+    def test_un_acorde_de_seis_cuerdas_se_conserva(self):
+        acorde = [nota(0.0, 40 + i * 5) for i in range(6)]
+
+        self.assertEqual(len(drop_knocks(acorde)), 6, "seis cuerdas sí se tocan a la vez")
+
+    def test_un_golpe_de_veintiseis_notas_se_tira_entero(self):
+        # El del segundo 73 del video: ruido de banda ancha, no un acorde. Se tira completo
+        # porque dentro de un golpe no hay forma de saber cuál de las alturas era música.
+        golpe = [nota(10.0 + i * 0.001, 40 + i) for i in range(26)]
+
+        self.assertEqual(drop_knocks(golpe), [])
+
+    def test_el_golpe_no_se_lleva_la_musica_de_al_lado(self):
+        musica = [nota(0.0, 60), nota(0.5, 62)]
+        golpe = [nota(10.0 + i * 0.001, 40 + i) for i in range(26)]
+
+        quedan = drop_knocks(sorted(musica + golpe))
+
+        self.assertEqual([x[2] for x in quedan], [60, 62])
+
+    def test_notas_seguidas_pero_no_simultaneas_no_son_un_golpe(self):
+        # Veinte notas repartidas en dos segundos son una escala rápida, no un porrazo.
+        escala = [nota(i * 0.1, 60 + i % 12) for i in range(20)]
+
+        self.assertEqual(len(drop_knocks(escala)), 20)
+
+    def test_sin_notas_no_revienta(self):
+        self.assertEqual(drop_knocks([]), [])
 
 
 class Limpiar(unittest.TestCase):
