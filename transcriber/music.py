@@ -135,6 +135,36 @@ def timing_bias(notes, grid):
     return offsets[len(offsets) // 2]
 
 
+def local_bias(notes, grid, window=4.0, minimum=8):
+    """El desfase de cada nota contra la rejilla, medido entre sus vecinas en el tiempo.
+
+    El desfase entre los dos relojes no es constante a lo largo de la pieza: medido en
+    «Solamente uno», el arranque cuadra con tres semicorcheas de corrección y la vuelta con
+    una. Un solo valor para toda la pieza acierta en un sitio y falla en el otro, y eso es
+    lo que dejaba el arranque en el 24 % mientras la vuelta iba al 53 %.
+
+    Para cada nota se toma la mediana de los desfases de las que suenan a menos de `window`
+    segundos. Si hay menos de `minimum` vecinas se usa el desfase de toda la pieza: con
+    pocas notas la mediana local persigue ruido y sale peor que no corregir.
+
+    Devuelve una lista con el corrimiento de cada nota, en segundos.
+    """
+    step = grid_step(grid)
+    if not notes or step <= 0:
+        return [0.0] * len(notes)
+
+    starts = [note[0] for note in notes]
+    offsets = [(start - grid[nearest_slot(grid, start)]) / step for start in starts]
+    overall = sorted(offsets)[len(offsets) // 2]
+
+    shifts = []
+    for start in starts:
+        near = sorted(o for s, o in zip(starts, offsets, strict=True) if abs(s - start) <= window)
+        bias = near[len(near) // 2] if len(near) >= minimum else overall
+        shifts.append(bias * step)
+    return shifts
+
+
 def quantize(notes, grid, inner_voices=1):
     """Qué suena en cada semicorchea: `posición -> {altura: amplitud}`.
 
@@ -146,8 +176,8 @@ def quantize(notes, grid, inner_voices=1):
     fuerte casi siempre es el armónico de esa, no una nota pisada.
     """
     by_slot = {}
-    shift = timing_bias(notes, grid) * grid_step(grid)
-    for start, _, pitch, amp in notes:
+    shifts = local_bias(notes, grid)
+    for (start, _, pitch, amp), shift in zip(notes, shifts, strict=True):
         slot = nearest_slot(grid, start - shift)
         current = by_slot.setdefault(slot, {})
         current[pitch] = max(current.get(pitch, 0), amp)
