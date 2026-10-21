@@ -142,6 +142,12 @@ class Notacion(unittest.TestCase):
         self.assertIn("1:7:A:a", texto, "la primera lleva el acento")
         self.assertIn("4:5:I:", texto)
 
+    def test_las_voces_internas_se_cortan_y_melodia_y_bajo_suenan(self):
+        # Melodía en la primera, voz interna en la tercera, bajo en la quinta al aire.
+        texto = notation(((1, 5), (3, 5), (5, 0)), 5, 1)
+
+        self.assertEqual(texto, "1:5:I:a 3:5:I:c 5:0::")
+
 
 if __name__ == "__main__":
     unittest.main()

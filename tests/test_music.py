@@ -8,12 +8,17 @@ comprobar.
 import unittest
 
 from transcriber.music import (
+    COMPOUND,
+    SIMPLE,
     bar_phase,
     bar_starts,
     chord_name,
     clean,
     drop_knocks,
+    grid_of,
+    meter_of,
     nearest_slot,
+    phase_bias,
     quantize,
     subdivide,
 )
@@ -63,13 +68,20 @@ class Limpiar(unittest.TestCase):
 
     def test_tira_la_cuerda_que_seguia_sonando(self):
         # El modelo vuelve a detectar una altura que todavía vibra, y parece otro ataque.
-        notas = [nota(0.0, 60, amp=0.9, fin=1.0), nota(1.02, 60, amp=0.5)]
+        notas = [nota(0.0, 60, amp=0.9, fin=1.0), nota(0.05, 60, amp=0.5)]
 
         self.assertEqual(len(clean(notas)), 1, "la segunda es la misma cuerda sonando")
 
     def test_conserva_el_reataque_si_suena_mas_fuerte(self):
         # Volver a pulsar la misma cuerda más fuerte sí es un ataque nuevo.
-        notas = [nota(0.0, 60, amp=0.5, fin=1.0), nota(1.02, 60, amp=0.9)]
+        notas = [nota(0.0, 60, amp=0.5, fin=1.0), nota(0.05, 60, amp=0.9)]
+
+        self.assertEqual(len(clean(notas)), 2)
+
+    def test_volver_a_pulsar_mientras_suena_es_otra_nota(self):
+        # La cuerda sigue vibrando cuando se vuelve a pulsar, como en casi toda nota
+        # repetida. Esto antes se tiraba por eco y se perdía un tercio de las notas.
+        notas = [nota(0.0, 60, amp=0.9, fin=1.0), nota(0.5, 60, amp=0.6)]
 
         self.assertEqual(len(clean(notas)), 2)
 
@@ -92,31 +104,95 @@ class Cuadricula(unittest.TestCase):
 
 class Subdividir(unittest.TestCase):
     def test_un_hueco_de_un_pulso_da_cuatro_semicorcheas(self):
-        self.assertEqual(subdivide(1.0, 1.0), 4)
+        self.assertEqual(subdivide(1.0, 1.0, 4), 4)
 
     def test_un_golpe_saltado_da_ocho(self):
         # Si el detector se deja un golpe, el hueco vale dos pulsos: ocho semicorcheas.
-        self.assertEqual(subdivide(2.0, 1.0), 8)
+        self.assertEqual(subdivide(2.0, 1.0, 4), 8)
 
     def test_dos_golpes_saltados_dan_doce(self):
-        self.assertEqual(subdivide(3.0, 1.0), 12)
+        self.assertEqual(subdivide(3.0, 1.0, 4), 12)
 
     def test_el_vaiven_del_tempo_no_mueve_la_rejilla(self):
         # Un hueco de pulso y cuarto es el mismo pulso tocado con holgura, no una
         # semicorchea más. Tratarlo como semicorchea extra corría el resto de la pieza y
         # bajaba el acierto de «Solamente uno» del 52 % al 44 %.
-        self.assertEqual(subdivide(1.25, 1.0), 4)
-        self.assertEqual(subdivide(0.8, 1.0), 4)
+        self.assertEqual(subdivide(1.25, 1.0, 4), 4)
+        self.assertEqual(subdivide(0.8, 1.0, 4), 4)
 
     def test_un_hueco_de_pulso_y_medio_se_redondea_a_dos(self):
         # A partir de la mitad ya se parece más a un golpe saltado que a holgura.
-        self.assertEqual(subdivide(1.6, 1.0), 8)
+        self.assertEqual(subdivide(1.6, 1.0, 4), 8)
 
     def test_nunca_devuelve_menos_de_un_pulso(self):
-        self.assertEqual(subdivide(0.01, 1.0), 4)
+        self.assertEqual(subdivide(0.01, 1.0, 4), 4)
 
     def test_un_periodo_invalido_no_revienta(self):
-        self.assertEqual(subdivide(0.5, 0.0), 4)
+        self.assertEqual(subdivide(0.5, 0.0, 4), 4)
+
+    def test_en_compuesto_cada_pulso_vale_seis(self):
+        self.assertEqual(subdivide(1.0, 1.0, 6), 6)
+        self.assertEqual(subdivide(2.0, 1.0, 6), 12)
+        self.assertEqual(subdivide(0.01, 1.0, 6), 6)
+
+
+class Rejilla(unittest.TestCase):
+    def test_compuesto_da_seis_semicorcheas_por_pulso(self):
+        rejilla = grid_of([0.0, 1.0, 2.0, 3.0], 1.0, COMPOUND)
+
+        self.assertEqual(len(rejilla), 18, "tres huecos de seis")
+        self.assertAlmostEqual(rejilla[1], 1 / 6)
+        self.assertAlmostEqual(rejilla[6], 1.0, msg="el segundo pulso cae en la posición 6")
+
+    def test_simple_da_cuatro_y_conserva_el_hueco_saltado(self):
+        # Un golpe que el detector se dejó: el hueco de dos pulsos reparte ocho.
+        rejilla = grid_of([0.0, 1.0, 3.0], 1.0, SIMPLE)
+
+        self.assertEqual(len(rejilla), 12)
+        self.assertAlmostEqual(rejilla[4], 1.0)
+        self.assertAlmostEqual(rejilla[8], 2.0)
+
+
+class Compas(unittest.TestCase):
+    pulsos = [float(i) for i in range(12)]
+
+    def ataques(self, fases):
+        """Un ataque por cada fase en cada pulso, con la misma amplitud."""
+        return [nota(i + fase, 60) for i in range(1, 10) for fase in fases]
+
+    def test_corcheas_de_tresillo_dan_compuesto(self):
+        self.assertEqual(meter_of(self.ataques([0, 1 / 3, 2 / 3]), self.pulsos), COMPOUND)
+
+    def test_semicorcheas_dan_simple(self):
+        self.assertEqual(meter_of(self.ataques([0, 0.25, 0.5, 0.75]), self.pulsos), SIMPLE)
+
+    def test_solo_los_pulsos_dan_simple(self):
+        # Cae igual de bien en las dos rejillas: sin motivo para cambiar, simple.
+        self.assertEqual(meter_of(self.ataques([0]), self.pulsos), SIMPLE)
+
+    def test_el_adelanto_del_detector_no_cambia_el_compas(self):
+        # Todos los ataques llegan 1/16 de pulso antes del golpe, como en GuitarSet.
+        adelanto = 1 / 16
+        simples = [f - adelanto for f in (0, 0.25, 0.5, 0.75)]
+        ternarios = [f - adelanto for f in (0, 1 / 3, 2 / 3)]
+
+        self.assertEqual(meter_of(self.ataques(simples), self.pulsos), SIMPLE)
+        self.assertEqual(meter_of(self.ataques(ternarios), self.pulsos), COMPOUND)
+
+    def test_mide_el_adelanto_con_los_ataques_cercanos_al_golpe(self):
+        fases = [(0.95, 1.0)] * 5 + [(0.5, 1.0)] * 9
+
+        self.assertAlmostEqual(phase_bias(fases), -0.05)
+
+    def test_pocos_ataques_dan_simple(self):
+        self.assertEqual(meter_of(self.ataques([1 / 3])[:3], self.pulsos), SIMPLE)
+
+    def test_el_ataque_fuerte_pesa_mas_que_el_flojo(self):
+        # Los ataques fuertes son de tresillo y los flojos van sueltos entre medias.
+        fuertes = [nota(i + 1 / 3, 60, amp=1.0) for i in range(1, 10)]
+        flojos = [nota(i + 0.5, 60, amp=0.1) for i in range(1, 10)]
+
+        self.assertEqual(meter_of(fuertes + flojos, self.pulsos), COMPOUND)
 
 
 class Cuantizar(unittest.TestCase):
@@ -166,17 +242,27 @@ class BarrasDeCompas(unittest.TestCase):
         # Bajos en 4 y 12: el compás empieza en 4, no en 0.
         slots = {4: {40: 1.0}, 8: {64: 1.0}, 12: {40: 1.0}, 20: {40: 1.0}}
 
-        self.assertEqual(bar_phase(slots), 4)
+        self.assertEqual(bar_phase(slots, SIMPLE), 4)
 
     def test_sin_bajos_no_revienta(self):
         slots = {0: {64: 1.0}, 5: {65: 1.0}}
 
-        self.assertIn(bar_phase(slots), (0, 4, 8, 12))
+        self.assertIn(bar_phase(slots, SIMPLE), (0, 4, 8, 12))
+
+    def test_en_compuesto_el_compas_dura_veinticuatro(self):
+        # Bajos en 5 y 17 (tiempos fuertes a doce de distancia): el compás empieza en 5.
+        slots = {5: {40: 1.0}, 17: {40: 1.0}, 29: {40: 1.0}, 41: {40: 1.0}}
+
+        fase = bar_phase(slots, COMPOUND)
+        starts = bar_starts(slots, fase, COMPOUND)
+
+        self.assertEqual(fase, 5)
+        self.assertEqual(starts, [5, 29])
 
     def test_los_compases_cubren_todo_lo_que_suena(self):
         slots = {5: {60: 1.0}, 40: {60: 1.0}}
 
-        starts = bar_starts(slots, 4)
+        starts = bar_starts(slots, 4, SIMPLE)
 
         self.assertEqual(starts[0], 4, "empieza en la fase y antes de la primera nota")
         self.assertGreaterEqual(starts[-1] + 16, 40, "y llega hasta la última")
@@ -188,25 +274,31 @@ class Acordes(unittest.TestCase):
         # Do mayor: do, mi, sol.
         slots = {0: {60: 1.0, 64: 1.0, 67: 1.0}}
 
-        self.assertEqual(chord_name(slots, 0), "Do")
+        self.assertEqual(chord_name(slots, 0, SIMPLE), "Do")
 
     def test_reconoce_un_acorde_menor(self):
         # La menor: la, do, mi.
         slots = {0: {57: 1.0, 60: 1.0, 64: 1.0}}
 
-        self.assertEqual(chord_name(slots, 0), "Lam")
+        self.assertEqual(chord_name(slots, 0, SIMPLE), "Lam")
 
     def test_el_bajo_desempata_entre_relativos(self):
         # Las mismas notas son Do mayor o La menor; manda la que está abajo.
-        con_la_abajo = chord_name({0: {57: 1.5, 60: 1.0, 64: 1.0, 67: 1.0}}, 0)
+        con_la_abajo = chord_name({0: {57: 1.5, 60: 1.0, 64: 1.0, 67: 1.0}}, 0, SIMPLE)
 
         self.assertTrue(
             con_la_abajo.endswith("m"),
             "con el la abajo sale menor, salió %s" % con_la_abajo,
         )
 
+    def test_en_compuesto_el_bajo_desempata_en_el_tiempo_fuerte_doce(self):
+        # Mismas notas que Do o La menor; el bajo del segundo tiempo fuerte (12) es el la.
+        slots = {12: {57: 1.5}, 14: {60: 1.0, 64: 1.0, 67: 1.0}}
+
+        self.assertTrue(chord_name(slots, 0, COMPOUND).endswith("m"))
+
     def test_un_compas_en_silencio_no_tiene_acorde(self):
-        self.assertEqual(chord_name({}, 0), "")
+        self.assertEqual(chord_name({}, 0, SIMPLE), "")
 
 
 if __name__ == "__main__":

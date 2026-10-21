@@ -5,3 +5,9 @@ __pycache__/
 # Lo que sale de cada ejecución: audio, AlphaTex y wav intermedios.
 out/
 check/target/
+
+# Conjuntos de datos para medir el transcriptor; se bajan aparte y pesan cientos de megas.
+datasets/
+
+# Basura de macOS.
+.DS_Store

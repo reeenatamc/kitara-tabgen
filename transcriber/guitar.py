@@ -132,10 +132,21 @@ def notation(combo, position, accented_string):
 
     El dedo sale de la distancia al traste donde está la mano, que es como se digita de
     verdad: el índice en la posición y los demás por detrás.
+
+    Sólo la melodía y el bajo quedan sonando. Las voces internas se cortan al llegar el
+    ataque siguiente: si todo se deja sonar, el relleno se acumula y tapa la melodía, que es
+    lo primero que se oyó en el borrador de «Solamente uno» cuando empezó a conservar el
+    acompañamiento. Sin melodía en el pulso no hay nada que tapar, y suena todo.
     """
+    bass = max(combo, key=lambda note: -(TUNING[note[0] - 1] + note[1]))[0]
     tokens = []
     for string, fret in combo:
         finger = FINGERS[min(3, fret - position)] if fret > 0 else ""
-        mark = "a" if string == accented_string else ""
+        if string == accented_string:
+            mark = "a"
+        elif string == bass or accented_string is None:
+            mark = ""
+        else:
+            mark = "c"
         tokens.append("%d:%d:%s:%s" % (string, fret, finger, mark))
     return " ".join(tokens)
