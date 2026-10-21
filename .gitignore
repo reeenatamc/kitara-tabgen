@@ -11,3 +11,6 @@ datasets/
 
 # Basura de macOS.
 .DS_Store
+
+# El modelo de pulso: 190 MB, se baja aparte (ver README).
+models/
