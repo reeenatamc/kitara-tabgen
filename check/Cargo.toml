@@ -2,7 +2,10 @@
 name = "check"
 version = "0.0.0"
 edition = "2021"
+# La ruta a kitara es relativa al repo hermano. Cargo no expande `~` ni variables de entorno
+# dentro de una ruta, así que ésta es la única que no puede salir de `KITARA_REPO` como las
+# demás: si kitara está en otro sitio, esta línea es lo que hay que tocar.
 [dependencies]
-kitara-core = { path = "/Users/renata/Documents/GitHub/kitara/src-tauri/crates/kitara-core" }
+kitara-core = { path = "../../GitHub/kitara/src-tauri/crates/kitara-core" }
 serde_json = "1"
 [workspace]
