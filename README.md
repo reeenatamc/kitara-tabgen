@@ -84,3 +84,22 @@ uv venv --python 3.11 && .venv/bin/python -m unittest discover -s tests -t .
 
 Las rutas a kitara son absolutas en `check/Cargo.toml`, `transcribe.sh` y `render.sh`: si el
 repo se renombra o se mueve, hay que tocarlas.
+
+El seguidor de pulso necesita el modelo de Beat This en ONNX, 190 MB, que va fuera de git:
+
+```bash
+mkdir -p models
+for f in beat_this.onnx config.json mel-filterbank.bin; do
+  curl -sL -o "models/$f" "https://huggingface.co/musetric/beat-this-onnx/resolve/main/$f"
+done
+```
+
+## Licencia
+
+GPL-3.0, la misma que kitara: se puede usar, estudiar, modificar y redistribuir, y quien lo
+distribuya tiene que publicar su código bajo la misma licencia. Está en [LICENSE](LICENSE).
+
+Las obras de terceros conservan la suya: basic-pitch es Apache-2.0, librosa ISC, y el modelo
+de Beat This que se baja aparte es MIT. GuitarSet, que sólo hace falta para medir y no se
+distribuye aquí, es CC BY 4.0.
+
