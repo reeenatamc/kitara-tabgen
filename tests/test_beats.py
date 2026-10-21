@@ -15,7 +15,7 @@ from transcriber import beats
 class VentanasDeEspectrograma(unittest.TestCase):
     def test_una_grabacion_corta_cabe_en_una_ventana(self):
         spect = np.ones((300, beats.MEL_BINS), dtype=np.float32)
-        chunks, starts = beats._windows(spect)
+        chunks, _ = beats._windows(spect)
         self.assertEqual(len(chunks), 1)
         self.assertEqual(chunks[0].shape, (beats.CHUNK, beats.MEL_BINS))
 
