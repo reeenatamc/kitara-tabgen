@@ -6,15 +6,12 @@ esos datos y vive en los otros módulos, que se pueden probar sin cargar nada.
 """
 
 import warnings
-from itertools import pairwise
 
 warnings.filterwarnings("ignore")
 
 import librosa
 import numpy as np
 from basic_pitch.inference import predict
-
-from . import music
 
 
 def detect_notes(wav):
@@ -36,8 +33,8 @@ def detect_notes(wav):
     return sorted((start, end, pitch, amp) for start, end, pitch, amp, _ in events)
 
 
-def beat_grid(wav):
-    """Los instantes de cada semicorchea, y el tempo que sale de ellos.
+def beats(wav):
+    """Los instantes de cada pulso, y el periodo que hay entre ellos.
 
     Se le da al detector la señal tal cual. Probé realzar la parte percusiva antes, porque
     el detector se guía por los ataques y un render sintetizado no tiene el golpe de la uña:
@@ -53,13 +50,15 @@ def beat_grid(wav):
     se detecta a 117, que es una lectura musicalmente válida —cada compás sale partido en
     dos— pero entonces las barras no se corresponden con la tablatura escrita a mano.
 
-    La rejilla se extiende hacia los dos extremos con el mismo periodo, porque el detector
+    Los pulsos se extienden hacia los dos extremos con el mismo periodo, porque el detector
     no llega al principio ni al final de la grabación, y sin eso las primeras notas se
     quedarían fuera del primer compás.
+
+    Aquí no se decide cómo se parte el pulso ni se arma la rejilla: eso es de `music`, que
+    se puede probar sin audio.
     """
     y, sr = librosa.load(wav, sr=22050)
-    tempo, beats = librosa.beat.beat_track(y=y, sr=sr, start_bpm=100, units="time")
-    tempo = float(np.atleast_1d(tempo)[0])
+    _, beats = librosa.beat.beat_track(y=y, sr=sr, start_bpm=100, units="time")
     period = float(np.median(np.diff(beats)))
 
     before = int(np.ceil(beats[0] / period)) + 1
@@ -72,10 +71,4 @@ def beat_grid(wav):
         ]
     )
 
-    grid = np.concatenate(
-        [
-            np.linspace(a, b, music.subdivide(b - a, period), endpoint=False)
-            for a, b in pairwise(beats)
-        ]
-    )
-    return grid, 60.0 / period if period else tempo
+    return [float(t) for t in beats], period

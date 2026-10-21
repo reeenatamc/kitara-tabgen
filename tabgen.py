@@ -1,9 +1,9 @@
 """Escribe una canción de kitara y su guía de práctica desde una notación compacta.
 
 Un compás es una lista de `(posición, "cuerda:traste:dedo:marcas ...")`, con la posición en
-semicorcheas de 0 a 15. Una especificación vacía es un silencio, y cada pulso dura hasta la
-posición siguiente: eso es lo que permite escribir un compás entero en una línea y leerlo de
-un golpe al compararlo con la tablatura.
+semicorcheas de 0 a 15 (de 0 a 23 en un compás de 12/8). Una especificación vacía es un
+silencio, y cada pulso dura hasta la posición siguiente: eso es lo que permite escribir un
+compás entero en una línea y leerlo de un golpe al compararlo con la tablatura.
 
 Las marcas se combinan entre sí:
 
@@ -13,6 +13,7 @@ Las marcas se combinan entre sí:
     a   acento, o sea que esa es la melodía
     n   armónico natural
     s   entra con un ligado desde abajo
+    c   corta: se apaga al llegar el siguiente ataque en vez de seguir sonando
 
 Las duraciones salen de `DUR`, que traduce semicorcheas a figura y puntillos. Si un hueco no
 es una figura que exista —cinco semicorcheas no lo son—, el compás no suma y revienta aquí
@@ -22,7 +23,17 @@ en vez de salir descuadrado en la aplicación.
 import json
 import uuid
 
-DUR = {1: (16, 0), 2: (8, 0), 3: (8, 1), 4: (4, 0), 6: (4, 1), 8: (2, 0), 12: (2, 1), 16: (1, 0)}
+DUR = {
+    1: (16, 0),
+    2: (8, 0),
+    3: (8, 1),
+    4: (4, 0),
+    6: (4, 1),
+    8: (2, 0),
+    12: (2, 1),
+    16: (1, 0),
+    24: (1, 1),
+}
 
 
 class Builder:
@@ -33,10 +44,10 @@ class Builder:
         self.next_id += 1
         return self.next_id
 
-    def bar(self, events, dynamics, arpeggio=False):
+    def bar(self, events, dynamics, arpeggio=False, slots=16):
         beats = []
         for i, (pos, spec) in enumerate(events):
-            end = events[i + 1][0] if i + 1 < len(events) else 16
+            end = events[i + 1][0] if i + 1 < len(events) else slots
             if end - pos not in DUR:
                 raise ValueError("hueco de %d en la posicion %d de %r" % (end - pos, pos, events))
             duration, dots = DUR[end - pos]
@@ -60,7 +71,8 @@ class Builder:
                     for mark, name in (("p", "HAMMER_PULL"), ("v", "VIBRATO"), ("a", "ACCENT"))
                     if mark in marks
                 ]
-                note["techniques"] = " | ".join([*flags, "LET_RING"])
+                ring = [] if "c" in marks else ["LET_RING"]
+                note["techniques"] = " | ".join([*flags, *ring])
                 notes.append(note)
             if len({n["string"] for n in notes}) != len(notes):
                 raise ValueError(
@@ -110,16 +122,20 @@ def thicken(events, full, pairs, full_late=None):
     return out
 
 
-def write_song(path, meta, capo, sections, plan, tempos=None, chords=None):
+def write_song(path, meta, capo, sections, plan, tempos=None, chords=None, time_signature=(4, 4)):
     """Escribe el JSON de la canción.
 
     - `plan`: una tupla `(eventos, dinámica, arpegio)` por compás.
     - `sections`: tuplas `(tipo, etiqueta, compás inicial, compás final)`.
     - `tempos`: por compás, para los que van más lentos.
     - `chords`: un nombre por compás, y los vacíos no se escriben.
+    - `time_signature`: `(numerador, denominador)`, el mismo en todos los compases. Fija
+      cuántas semicorcheas suma cada uno: 16 en 4/4, 24 en 12/8.
     """
+    numerator, denominator = time_signature
+    slots = numerator * 16 // denominator
     builder = Builder()
-    bars = [builder.bar(events, dynamics, arpeggio) for events, dynamics, arpeggio in plan]
+    bars = [builder.bar(events, dynamics, arpeggio, slots) for events, dynamics, arpeggio in plan]
     # strict=False a propósito: chords puede venir vacía o más corta que los compases.
     for bar, chord in zip(bars, chords or [], strict=False):
         if chord:
@@ -128,7 +144,7 @@ def write_song(path, meta, capo, sections, plan, tempos=None, chords=None):
     for i in range(len(plan)):
         master = {
             "index": i,
-            "time_signature": {"numerator": 4, "denominator": 4},
+            "time_signature": {"numerator": numerator, "denominator": denominator},
             "key_signature": {"fifths": 0, "mode": "Major"},
         }
         for _, label, start, _ in sections:

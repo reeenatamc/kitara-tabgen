@@ -15,37 +15,38 @@ Uso: transcribe.py audio.wav cancion.json guia.json "Título"
 import sys
 
 from tabgen import write_guide, write_song
-from transcriber import draft, guitar, music, signal
+from transcriber import draft, guitar, pipeline, signal
 
 
 def main(wav, song_path, guide_path, title):
     notes = signal.detect_notes(wav)
-    grid, bpm = signal.beat_grid(wav)
-    heard = music.quantize(music.clean(music.drop_knocks(notes)), grid)
+    beats, period = signal.beats(wav)
+    bpm = 60.0 / period
 
-    starts = music.bar_starts(heard, music.bar_phase(heard))
-    chords = draft.chords_of(heard, starts)
-
-    # El bajo se escribe, no se copia: el pulgar del fingerstyle es una alternancia regular
-    # y los huecos del detector en el grave suenan a error.
-    slots = draft.harmonize(heard, starts, chords)
+    # Las reglas van en `pipeline` para que `bench.py` mida exactamente las mismas.
+    stages = pipeline.run(notes, beats, period)
+    starts, chords, slots, meter = stages.starts, stages.chords, stages.slots, stages.meter
 
     placed = guitar.place(slots)
 
-    plan = [(draft.bar_events(placed, start), "MP", False) for start in starts]
+    plan = [(draft.bar_events(placed, start, meter), "MP", False) for start in starts]
 
     score = write_song(
         song_path,
-        draft.metadata(title, bpm),
+        draft.metadata(title, bpm, meter),
         0,
         draft.sections_of(len(plan)),
         plan,
         chords=draft.only_on_change(chords),
+        time_signature=(meter.numerator, meter.denominator),
     )
     write_guide(guide_path, score, draft.guide_steps(chords))
 
     detected = sum(len(voices) for voices in slots.values())
-    print("notas %d, tempo %d, compases %d" % (detected, round(bpm), len(plan)))
+    print(
+        "notas %d, tempo %d, compás %d/%d, compases %d"
+        % (detected, round(bpm), meter.numerator, meter.denominator, len(plan))
+    )
     print("acordes:", " ".join(chord or "-" for chord in chords))
 
 

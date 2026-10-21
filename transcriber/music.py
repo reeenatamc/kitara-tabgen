@@ -5,6 +5,10 @@ dónde empiezan los compases y qué acorde es cada uno. Son las decisiones que m
 equivocan, así que están aparte para poder probarlas con notas puestas a mano.
 """
 
+from bisect import bisect_right
+from dataclasses import dataclass
+from itertools import pairwise
+
 #: Las doce notas, como las nombra la guía.
 NOTE_NAMES = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si"]
 
@@ -14,8 +18,41 @@ CHORD_SHAPES = {"": (0, 4, 7), "m": (0, 3, 7), "7": (0, 4, 7, 10)}
 #: Por debajo de esta altura MIDI cuenta como bajo, para buscar las barras de compás.
 BASS_CEILING = 52
 
-#: Semicorcheas que tiene un compás de 4/4.
-BAR_SLOTS = 16
+
+@dataclass(frozen=True)
+class Meter:
+    """Cómo se divide el pulso, y con eso el largo del compás.
+
+    El compás siempre tiene cuatro pulsos, igual que antes de distinguir los compases: no se
+    separa 2/4 de 4/4. Por eso un 6/8 sale escrito como 12/8, que suena igual y tiene el mismo
+    pulso con puntillo cuatro veces.
+    """
+
+    #: Semicorcheas por pulso: 4 si el pulso se parte en dos, 6 si se parte en tres.
+    beat_slots: int
+    #: El compás tal como se escribe en la partitura.
+    numerator: int
+    denominator: int
+
+    @property
+    def bar_slots(self):
+        """Semicorcheas por compás: 16 en simple, 24 en compuesto."""
+        return 4 * self.beat_slots
+
+    @property
+    def strong(self):
+        """Los dos tiempos fuertes: el primero y el tercero, donde el pulgar toca el bajo."""
+        return (0, self.bar_slots // 2)
+
+
+#: Compás simple: cada pulso se parte en dos (negra, corcheas, semicorcheas).
+SIMPLE = Meter(4, 4, 4)
+
+#: Compás compuesto: cada pulso se parte en tres (negra con puntillo, corcheas de tresillo).
+COMPOUND = Meter(6, 12, 8)
+
+#: Con menos ataques entre pulsos que estos no hay forma de decir cómo se parte el pulso.
+MIN_ATTACKS = 8
 
 
 #: Cuerdas que tiene una guitarra. Más ataques a la vez que esto no es música.
@@ -52,19 +89,25 @@ def drop_knocks(notes, strings=STRINGS, together=TOGETHER):
     return kept
 
 
-def clean(notes, min_amplitude=0.35, retrigger=0.06, margin=1.1):
+def clean(notes, min_amplitude=0.35, retrigger=0.08, margin=1.1):
     """Quita las notas flojas y las que son una cuerda que todavía sonaba.
 
     basic-pitch vuelve a detectar una altura que sigue vibrando, y eso aparece como si se
-    hubiera tocado otra vez. Se descarta cuando llega muy pegada a la anterior y no suena
-    más fuerte, pero se alarga la nota original: dejó de ser un ataque nuevo, no dejó de
-    sonar.
+    hubiera tocado otra vez. Se descarta cuando llega muy pegada al ataque anterior y no
+    suena más fuerte, pero se alarga la nota original: dejó de ser un ataque nuevo, no dejó
+    de sonar.
+
+    La distancia se mide desde el ataque anterior, no desde donde terminó. Medida desde el
+    final, toda cuerda que se vuelve a pulsar mientras suena pasaba por eco, y en guitarra
+    eso es casi cualquier nota repetida: en GuitarSet esta regla tiraba un tercio de las
+    notas reales (de 87 % a 59 % de acierto). Desde el ataque, la melodía final sube del
+    60 % al 73 % allí, y en «Solamente uno» la melodía en orden del 71 % al 77 %.
     """
     kept, last = [], {}
     for start, end, pitch, amp in notes:
         previous = last.get(pitch)
         weak = amp < min_amplitude
-        echo = previous and start < previous[1] + retrigger and amp <= previous[2] * margin
+        echo = previous and start - previous[0] < retrigger and amp <= previous[2] * margin
         if weak or echo:
             if previous:
                 last[pitch] = (previous[0], max(previous[1], end), previous[2])
@@ -84,7 +127,7 @@ def nearest_slot(grid, time):
     return best
 
 
-def subdivide(gap, period):
+def subdivide(gap, period, beat_slots):
     """Cuántas semicorcheas caben en el hueco entre dos golpes detectados.
 
     El detector de pulso se salta los golpes que no reconoce y deja huecos que valen dos
@@ -97,12 +140,96 @@ def subdivide(gap, period):
     grabación de guitarra sola— se convierte en una semicorchea de más que corre el resto de
     la pieza. Medido en «Solamente uno»: así bajaba del 52 % al 44 %.
 
-    Nunca devuelve menos de cuatro: un hueco más corto que un pulso es el mismo pulso
-    medido con prisa, no menos música.
+    Nunca devuelve menos de un pulso: un hueco más corto es el mismo pulso medido con prisa,
+    no menos música.
     """
     if period <= 0:
-        return 4
-    return 4 * max(1, round(gap / period))
+        return beat_slots
+    return beat_slots * max(1, round(gap / period))
+
+
+def grid_of(beats, period, meter):
+    """El instante de cada semicorchea: cada hueco entre golpes se reparte en partes iguales."""
+    grid = []
+    for a, b in pairwise(float(t) for t in beats):
+        count = subdivide(b - a, period, meter.beat_slots)
+        step = (b - a) / count
+        grid.extend(a + k * step for k in range(count))
+    return grid
+
+
+def beat_phases(notes, beats):
+    """La fase de cada ataque dentro de su pulso, `(fase de 0 a 1, amplitud)`.
+
+    Se cuenta desde el golpe anterior. Los ataques que caen antes del primer golpe o después
+    del último no tienen pulso entre el que medirse y se saltan.
+    """
+    beats = [float(t) for t in beats]
+    out = []
+    for start, _, _, amp in notes:
+        i = bisect_right(beats, start) - 1
+        if 0 <= i < len(beats) - 1:
+            out.append(((start - beats[i]) / (beats[i + 1] - beats[i]), amp))
+    return out
+
+
+def phase_bias(phases):
+    """Lo que se adelanta el detector de notas al de pulso, como fracción de pulso.
+
+    Es el mismo desfase que corrige `timing_bias` en la rejilla, y aquí hay que quitarlo
+    antes de comparar: medido sobre los 144 fragmentos de GuitarSet, los ataques caen en
+    mediana a -1/16 de pulso del golpe, que es justo el error medio de un reparto al azar en
+    la rejilla binaria. Sin corregirlo, las dos rejillas puntúan casi igual en todo (105
+    fragmentos de 4/4 salían compuestos) porque los ataques no caen exactamente en ninguna.
+
+    Se mide sólo con los ataques que caen a menos de 1/8 de pulso del golpe, que es donde
+    caen los de ambas rejillas y ninguna otra subdivisión (la más cercana es 1/4), así que el
+    desfase no depende de qué rejilla sea la buena. Mediana, no promedio, por la misma razón
+    que en `timing_bias`.
+    """
+    near = sorted(p - round(p) for p, _ in phases if abs(p - round(p)) <= 1 / 8)
+    return near[len(near) // 2] if near else 0.0
+
+
+def meter_errors(notes, beats):
+    """Cuánto se aleja cada rejilla de los ataques: `(binaria, ternaria)`, sin unidades.
+
+    De cada ataque se toma su fase dentro del pulso (0 a 1, contando desde el golpe anterior,
+    y quitado el desfase de `phase_bias`) y se mide la distancia a la subdivisión más
+    cercana. La binaria es {0, 1/4, 1/2, 3/4} y la ternaria {0, 1/3, 2/3}. La distancia
+    media se pondera por la amplitud, para que un ataque débil dudoso pese menos que el golpe
+    del bajo, y se divide entre lo que daría tocar al azar (1/16 y 1/12): la ternaria tiene
+    menos distancia media posible, así que sin normalizar saldría favorecida siempre.
+
+    Con menos de `MIN_ATTACKS` ataques entre pulsos devuelve `None`.
+    """
+    phases = beat_phases(notes, beats)
+    if len(phases) < MIN_ATTACKS:
+        return None
+    bias = phase_bias(phases)
+    binary = ternary = total = 0.0
+    for phase, amp in phases:
+        phase -= bias
+        binary += amp * abs(phase * 4 - round(phase * 4)) / 4
+        ternary += amp * abs(phase * 3 - round(phase * 3)) / 3
+        total += amp
+    if total <= 0:
+        return None
+    return binary / total * 16, ternary / total * 12
+
+
+def meter_of(notes, beats):
+    """Si el pulso se parte en dos (`SIMPLE`) o en tres (`COMPOUND`).
+
+    Gana la rejilla que deja los ataques más cerca de sus puntos, según `meter_errors`. Un
+    empate, o no tener ataques suficientes, da `SIMPLE`: es lo que se asumía antes y lo que
+    es casi toda la música de guitarra que se transcribe aquí.
+    """
+    errors = meter_errors(notes, beats)
+    if errors is None:
+        return SIMPLE
+    binary, ternary = errors
+    return COMPOUND if ternary < binary else SIMPLE
 
 
 def grid_step(grid):
@@ -166,13 +293,13 @@ def quantize(notes, grid, inner_voices=1):
     return out
 
 
-def bar_phase(slots):
+def bar_phase(slots, meter):
     """En qué semicorchea del compás caen las barras.
 
     Los bajos marcan el compás: se prueba cada posición como principio y gana la que deje
     más peso grave en el primer y el tercer tiempo, contando doble el primero.
 
-    Se prueban las dieciséis, no sólo los cuatro tiempos. El detector de pulso no pone sus
+    Se prueban todas las del compás, no sólo los cuatro tiempos. El detector de pulso no pone sus
     golpes exactamente donde cae el pulso, así que la rejilla entera puede estar corrida una
     o dos semicorcheas; si sólo se prueban los tiempos no hay ninguna fase que arregle eso.
     Medido en «Solamente uno»: correr la rejilla tres semicorcheas a mano subía el arranque
@@ -185,22 +312,23 @@ def bar_phase(slots):
         slot: sum(amp for pitch, amp in voices.items() if pitch < BASS_CEILING)
         for slot, voices in slots.items()
     }
+    size = meter.bar_slots
     return max(
-        range(BAR_SLOTS),
+        range(size),
         key=lambda offset: (
-            sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS in (0, 8))
-            + sum(w for slot, w in bass_weight.items() if (slot - offset) % BAR_SLOTS == 0)
+            sum(w for slot, w in bass_weight.items() if (slot - offset) % size in meter.strong)
+            + sum(w for slot, w in bass_weight.items() if (slot - offset) % size == 0)
         ),
     )
 
 
-def bar_starts(slots, phase):
+def bar_starts(slots, phase, meter):
     """Las posiciones donde empieza cada compás."""
     first, last = min(slots), max(slots)
-    return list(range(first - (first - phase) % BAR_SLOTS, last + 1, BAR_SLOTS))
+    return list(range(first - (first - phase) % meter.bar_slots, last + 1, meter.bar_slots))
 
 
-def chord_name(slots, start):
+def chord_name(slots, start, meter):
     """Qué acorde suena en un compás.
 
     Suma la energía de cada una de las doce notas y prueba las formas conocidas. El bajo del
@@ -212,10 +340,10 @@ def chord_name(slots, start):
     """
     weight = [0.0] * 12
     bass = None
-    for slot in range(start, start + BAR_SLOTS):
+    for slot in range(start, start + meter.bar_slots):
         for pitch, amp in slots.get(slot, {}).items():
             weight[pitch % 12] += amp
-            if slot - start in (0, 8) and (bass is None or pitch < bass):
+            if slot - start in meter.strong and (bass is None or pitch < bass):
                 bass = pitch
 
     total = sum(weight)
